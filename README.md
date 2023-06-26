@@ -5,7 +5,7 @@ Digits Solver is a Python program that solves a digits puzzle game by finding ma
 ## Table of Contents
 - [Usage](#usage)
 - [Examples](#examples)
-- [Alternative Usage](#alternative)
+- [Alternative Usage](#alternative-usage)
 - [Contributing](#contributing)
 - [License](#license)
 
