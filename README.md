@@ -5,6 +5,7 @@ Digits Solver is a Python program that solves a digits puzzle game by finding ma
 ## Table of Contents
 - [Usage](#usage)
 - [Examples](#examples)
+- [Alternative Usage](#alternative_usage)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -51,6 +52,15 @@ we found 1 solution(s)
 Contributions to the Digits Solver program are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
 
 When contributing, please ensure that you follow best practices, maintain code quality, and provide clear descriptions of your changes.
+
+## Alternative Usage
+The Digits Solver can also be imported as a Python module and used programmatically. Here's an example:
+```
+from solver import DigitSolver
+solver = DigitSolver([3, 12, 15, 20, 23, 25], 439)
+solution_count = solver.solve(False)
+print(f"we found {solution_count} solution(s)")
+```
 
 ## License
 
