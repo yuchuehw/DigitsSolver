@@ -38,8 +38,12 @@ python solver.py <starting_digits> <target_digit> [-os]
 The program will output the number of solutions found and display each solution in the following format:
 
 ```
-Solution 1:
-3 + 12 × 20 + 15 + 23 × 25 = 439
+solution found:
+15 + 3 = 18
+23 × 18 = 414
+414 + 25 = 439
+
+we found 1 solution(s)
 ```
 
 ## Contributing
