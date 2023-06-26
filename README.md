@@ -60,9 +60,9 @@ print(f"we found {solution_count} solution(s)")
 
 I have also included a few additional Python programs that complement the solver program. You can find detailed instructions on how to use each of these programs below:
 
-- [How to Use prettySolve.py](prettySolve.md): Provides a visually enhanced version of the solver program.
-- [How to Use solveDaily.py](solveAuto.md): Demonstrates how to solve the puzzle using daily challenge inputs.
-- [How to Use solveMany.py](solveAuto.md): Shows how to solve multiple puzzles in a batch.
+- [How to Use prettySolve.py](reference/prettySolve.md): Provides a visually enhanced version of the solver program.
+- [How to Use solveDaily.py](reference/solveAuto.md): Demonstrates how to solve the puzzle using daily challenge inputs.
+- [How to Use solveMany.py](reference/solveAuto.md): Shows how to solve multiple puzzles in a batch.
 
 Feel free to explore these files and utilize them for specific use cases or scenarios.
 
