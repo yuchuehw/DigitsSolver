@@ -9,8 +9,7 @@ Before running the script, make sure you have the following installed:
 - Python 3.x
 - Selenium library
 - Chrome WebDriver
-- solver.py
-- solveDaily.py or solverMany.py + TimeShift.js
+- solver folder
 
 ## Getting Started
 
@@ -32,11 +31,11 @@ Before running the script, make sure you have the following installed:
 3. Run the script:
 
    ```shell
-   python solveDaily.py
+   python solver/util/solveDaily
    ```
    or
    ```shell
-   python solveMany.py
+   python solver/util/solveMany
    ```
 
    The script will launch a Chrome browser and start solving the puzzles automatically.
