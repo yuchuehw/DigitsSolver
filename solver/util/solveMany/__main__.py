@@ -1,8 +1,8 @@
-from runme import play_button_click
-from runme import read_problem
-from runme import combine_numbers
-from runme import next_puzzle_button_click
-from runme import back_to_puzzles_button_click
+from solveMany import play_button_click
+from solveMany import read_problem
+from solveMany import combine_numbers
+from solveMany import next_puzzle_button_click
+from solveMany import back_to_puzzles_button_click
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
