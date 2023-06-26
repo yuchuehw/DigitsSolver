@@ -1,8 +1,8 @@
-from runme import play_button_click
-from runme import close_help_button_click
-from runme import read_problem
-from runme import combine_numbers
-from runme import next_puzzle_button_click
+from solveDaily import play_button_click
+from solveDaily import close_help_button_click
+from solveDaily import read_problem
+from solveDaily import combine_numbers
+from solveDaily import next_puzzle_button_click
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
