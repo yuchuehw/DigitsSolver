@@ -15,23 +15,24 @@ Digits Solver is a Python program that solves a digits puzzle game by finding ma
 To run the Digits Solver program, execute the following command:
 
 ```bash
-python solver.py <starting_digits> <target_digit> [-os]
+python solver <starting_digits> <target_digit> [-os] [-h]
 ```
 
 - `<starting_digits>`: A space-separated list of integers representing the starting digits.
 - `<target_digit>`: The target digit that needs to be obtained.
 - `-os` or `--onesolution` (optional): If specified, the program will find only one solution. Otherwise, it will find all possible solutions.
+- -`h` or `--help` (optional): If used, the help menu would be shown.
 
 ## Examples
 
 1. Find all solutions for the digits puzzle:
    ```bash
-   python solver.py 3 12 15 20 23 25 439
+   python solver 3 12 15 20 23 25 439
    ```
 
 2. Find only one solution for the digits puzzle:
    ```bash
-   python solver.py 3 12 15 20 23 25 439 -os
+   python solver 3 12 15 20 23 25 439 -os
    ```
 
 ## Output
