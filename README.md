@@ -76,7 +76,7 @@ When contributing, please ensure that you follow best practices, maintain code q
 
 ## License
 
-The Digits Solver program is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this program for personal or commercial purposes. Please see the [LICENSE](LICENSE) file for more details.
+The Digits Solver program is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). You are free to use, modify, and distribute this program for personal or commercial purposes. Please see the [LICENSE](LICENSE.md) file for more details.
 
 ## Acknowledgements
 
