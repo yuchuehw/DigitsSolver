@@ -14,12 +14,12 @@ Before using `prettySolve.py`, make sure you have the following:
 
 1. Open a terminal or command prompt.
 
-2. Navigate to the directory where the `prettySolve.py` file is located.
+2. dowload the solver folder and Navigate to that directory.
 
 3. Run the program using the following command:
 
    ```bash
-   python prettySolve.py
+   python solver/util/prettySolve
    ```
 
 4. Follow the on-screen instructions to provide the required inputs.
