@@ -55,6 +55,16 @@ solver = DigitSolver([3, 12, 15, 20, 23, 25], 439)
 solution_count = solver.solve(False)
 print(f"we found {solution_count} solution(s)")
 ```
+## Other Files
+
+I have also included a few additional Python programs that complement the solver program. You can find detailed instructions on how to use each of these programs below:
+
+- [How to Use prettySolve.py](prettySolve.md): Provides a visually enhanced version of the solver program.
+- [How to Use solveDaily.py](solveDaily.md): Demonstrates how to solve the puzzle using daily challenge inputs.
+- [How to Use solveMany.py](solveMany.md): Shows how to solve multiple puzzles in a batch.
+
+Feel free to explore these files and utilize them for specific use cases or scenarios.
+
 
 ## Contributing
 
@@ -66,3 +76,7 @@ When contributing, please ensure that you follow best practices, maintain code q
 ## License
 
 The Digits Solver program is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this program for personal or commercial purposes. Please see the [LICENSE](LICENSE) file for more details.
+
+## Acknowledgements
+
+Special thanks to the author of [timeshift.js](https://github.com/plaa/TimeShift-js) for their contribution to this project. Portions of their code have been utilized in the implementation of the speedrun.py
