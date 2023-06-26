@@ -32,7 +32,11 @@ Before running the script, make sure you have the following installed:
 3. Run the script:
 
    ```shell
-   python digits_solver.py
+   python solveDaily.py
+   ```
+   or
+   ```shell
+   python solveMany.py
    ```
 
    The script will launch a Chrome browser and start solving the puzzles automatically.
