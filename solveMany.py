@@ -7,8 +7,6 @@ from solver import DigitSolver
 from collections import defaultdict    
 from datetime import datetime
 
-# a = new Date('2023-06-23T00:00:00.000Z').getTime()
-
 inject = ""
 
 with open("TimeShift.js","r") as f:
