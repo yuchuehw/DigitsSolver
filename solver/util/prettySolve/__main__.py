@@ -1,9 +1,18 @@
-from solver import DigitSolver
 import concurrent.futures
 import os
+import sys
+## temporary implementation ##
+path = os.path.abspath(__file__).split("/")
+path.pop()
+path.pop()
+path.pop()
+path.pop()
+sys.path.append("/".join(path))
+## temporary implementation ##
+
+from solver.solver import DigitSolver
 
 Executor = concurrent.futures.ThreadPoolExecutor
-
 
 def main():
     os.system('clear')
