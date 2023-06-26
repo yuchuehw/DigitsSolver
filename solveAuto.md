@@ -77,4 +77,4 @@ Feel free to modify the code according to your specific requirements.
 
 This script is provided under the [MIT License](LICENSE).
 
-Please note that the documentation assumes you have already set up the necessary environment and dependencies as mentioned in the "Prerequisites" section. Make sure to replace `digits_solver.py` with the actual filename if you have named the file differently.
+Please note that the documentation assumes you have already set up the necessary environment and dependencies as mentioned in the "Prerequisites" section.
