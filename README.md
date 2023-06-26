@@ -51,7 +51,7 @@ we found 1 solution(s)
 ## Alternative Usage
 The Digits Solver can also be imported as a Python module and used programmatically. Here's an example:
 ```python
-from solver import DigitSolver
+from solver.solver import DigitSolver
 solver = DigitSolver([3, 12, 15, 20, 23, 25], 439)
 solution_count = solver.solve(False)
 print(f"we found {solution_count} solution(s)")
