@@ -14,6 +14,7 @@ import sys
 ## temporary implementation ##
 path = os.path.abspath(__file__).split("/")
 path.pop()
+timeshiftpath = "/".join(path) + "/TimeShift.js"
 path.pop()
 path.pop()
 path.pop()
@@ -30,7 +31,7 @@ def main():
     driver = webdriver.Chrome(options=chrome_options)
     # Read TimeShift.js
     inject = ""
-    with open("TimeShift.js", "r") as f:
+    with open(timeshiftpath, "r") as f:
         inject = f.read()
 
     driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {'source': inject})
