@@ -23,18 +23,19 @@ sys.path.append("/".join(path))
 
 from solver.solver import DigitSolver
 
+
 def main():
     chrome_options = Options()
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+
     driver = webdriver.Chrome(options=chrome_options)
     # Read TimeShift.js
     inject = ""
     with open(timeshiftpath, "r") as f:
         inject = f.read()
 
-    driver.execute_cdp_cmd('Page.addScriptToEvaluateOnNewDocument', {'source': inject})
+    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {"source": inject})
 
     LEVEL_0_TIME = 1681084800000
     start_level = 0
@@ -45,7 +46,7 @@ def main():
         puzzle_date = datetime.fromtimestamp(time_ // 1000).strftime("%B %d, %Y")
         print(f"Now solving puzzle #{level} ({puzzle_date})")
 
-        driver.get('https://www.nytimes.com/games/digits')
+        driver.get("https://www.nytimes.com/games/digits")
         driver.execute_script(f"Date = TimeShift.Date;TimeShift.setTime({time_});")
 
         play_button_click(driver)
@@ -63,7 +64,7 @@ def main():
 
             for step in solution[0]:
                 print(step)
-                step_list = step.split(' ')
+                step_list = step.split(" ")
                 combine_numbers(driver, step_list, buttons)
 
             if question == 4:
@@ -75,6 +76,7 @@ def main():
             next_puzzle_button_click(driver)
 
     driver.quit()
+
 
 if __name__ == "__main__":
     main()
