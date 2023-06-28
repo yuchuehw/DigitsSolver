@@ -1,25 +1,76 @@
-name: Community Support Request
-title: "[Support]: "
-labels: ["community-support"]
+name: Community Support
+description: got stuck? we can help!
+title: "[Bug]: "
+labels: ["bug", "triage"]
 assignees:
-  - ""
-
+  - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        <!-- Provide a clear and concise description of your support request. -->
-
+        Before filling out this report be sure to double check to docs and see if you issue could be adressed there!
   - type: input
-    id: description
+    id: contact
     attributes:
-      label: Description
-      description: Provide a clear and concise description of your support request.
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "I don't know how to bla..."
+    validations:
       required: true
-
   - type: input
-    id: additional-information
+    id: python
     attributes:
-      label: Additional Information
-      description: Add any additional information or context that may be helpful.
-
+      label: Python Version
+      description: What is your python version?
+      placeholder: python 3.10.0
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      placeholder: v1.6.0
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: OS
+      description: What operating system are you using?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - MacOS
+        - others(specify below)
+  - type: input
+    id: machine
+    attributes:
+      label: Machine/OS
+      description: What type of machine are you running on?
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/yuchuehw/DigitsSolver/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
