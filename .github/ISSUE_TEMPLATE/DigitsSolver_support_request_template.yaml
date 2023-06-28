@@ -1,7 +1,7 @@
 name: Community Support
 description: got stuck? we can help!
-title: "[Bug]: "
-labels: ["bug", "triage"]
+title: "[General]: "
+labels: ["question", "triage"]
 assignees:
   - octocat
 body:
