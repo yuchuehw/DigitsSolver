@@ -23,6 +23,11 @@ You can see the algorithm in action here(click the green run button after redire
 
 [![Replit](https://img.shields.io/badge/DEMO-REPL.IT-purple.svg?style=flat&logo=replit)](https://replit.com/@yuchuehw/DigitsSolver)
 
+You could also watch this speed run that uses this algorithm:
+
+[![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
+
+
 ## Table of Contents
 - [Usage](#usage)
 - [Examples](#examples)
