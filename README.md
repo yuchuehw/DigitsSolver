@@ -1,6 +1,14 @@
 # Digits Solver
-
 Digits Solver is a Python program that solves a digits puzzle game by finding mathematical operations that can be applied to a set of starting digits to obtain a target digit.
+
+![python badge](https://img.shields.io/badge/Python-3776AB?style=flat&for-the-badge&logo=python&logoColor=white)
+![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&color=pink)
+![License](https://img.shields.io/github/license/yuchuehw/DigitsSolver?style=flat&color=yellow)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![HitCount](https://hits.dwyl.com/yuchuehw/DigitsSolver.svg?style=flat)](http://hits.dwyl.com/yuchuehw/DigitsSolver)
+
+## Demo
+[![Replit](https://img.shields.io/badge/DEMO-REPL.IT-purple.svg?style=flat&logo=replit)](https://replit.com/@ponggg/DSgithub#DigitsSolver/solver/solver.py)
 
 ## Table of Contents
 - [Usage](#usage)
