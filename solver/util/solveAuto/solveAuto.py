@@ -64,3 +64,7 @@ def combine_numbers(driver, step_list, buttons):
     buttons[step_list[4]].append(i2)
 
     wait_til_combine(driver, f"number-pos-{i2}", step_list[4])
+
+
+def back_to_puzzles_button_click(driver):
+    click_element(driver, "back-to-puzzles-button", "back to puzzles button doesn't work!")

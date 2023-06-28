@@ -22,23 +22,40 @@ Before running the script, make sure you have the following installed:
 
 3. Download the Chrome WebDriver executable and add its location to your system's PATH environment variable.
 
+Sure! Here's the documentation for the command-line interface:
+
+
 ## Usage
 
-1. Open the `digits_solver.py` script in a text editor.
+```plaintext
+solveAuto [-h] [[-start S] [-level L] | [-daily]]
+```
 
-2. Update the `inject` variable with the path to the `TimeShift.js` file. This file is used to manipulate the game's time.
+### Optional Arguments
 
-3. Run the script:
+- `-h, --help`: Show the help message and exit.
 
-   ```shell
-   python solver/util/solveDaily
+- `-start S, --startLevel S`: Specify the starting level to begin solving the puzzles. The value should be an integer.
+
+- `-level L, --levelToPlay L`: Specify the total number of levels to play. The value should be an integer.
+
+- `-daily, --dailyOnly`: Solve daily puzzles only. If this flag is provided, the tool will ignore the `--startLevel` and `--levelToPlay` options and solve only the daily puzzle.
+
+## Examples
+
+
+1. Solve 10 levels starting from level 5:
+   ```plaintext
+   solveAuto --startLevel 5 --levelToPlay 10
    ```
-   or
-   ```shell
-   python solver/util/solveMany
+
+2. Solve daily puzzles only:
+   ```plaintext
+   solveAuto --dailyOnly
    ```
 
-   The script will launch a Chrome browser and start solving the puzzles automatically.
+Note: If no arguments are provided, the tool will use default settings (start from level 1 to level 20).
+
 
 ## Functionality
 
