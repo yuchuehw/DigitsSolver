@@ -1,3 +1,4 @@
+from solver.solver import DigitSolver
 def test_solve_single_solution():
     solver = DigitSolver([8, 11, 13, 18, 23, 24], 407)
     solver.solve()
