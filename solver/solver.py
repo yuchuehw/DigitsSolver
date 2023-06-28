@@ -15,20 +15,16 @@ class DigitSolver:
     def __init__(self, starting_digits: iter, target_digit: int):
         if not isinstance(target_digit, int) or target_digit < 0:
             raise TypeError(
-              "Invalid target_digit value. It must be a positive integer."
+                "Invalid target_digit value. It must be a positive integer."
             )
 
         try:
             starting_digits = sorted(starting_digits)
         except Exception:
-            raise TypeError(
-              "starting_digits must be a iter and applied to sorted()"
-            )
+            raise TypeError("starting_digits must be a iter and applied to sorted()")
 
         if not all(isinstance(digit, int) for digit in starting_digits):
-            raise TypeError(
-              "members of starting_digits must be integers"
-            )
+            raise TypeError("members of starting_digits must be integers")
 
         self._starting_digits = starting_digits
         self._target_digit = target_digit
@@ -54,16 +50,12 @@ class DigitSolver:
 
         if total_product < self._target_digit:
             self._has_no_solution = True
-            warnings.warn(
-              "No Solution Warning. (Target too big!)"
-            )
+            warnings.warn("No Solution Warning. (Target too big!)")
 
     def _already_solved_check(self) -> None:
         if self._target_digit in self._starting_digits:
             self._already_solved = True
-            warnings.warn(
-              "Puzzle is already Solved. (Target in starting_digit)"
-            )
+            warnings.warn("Puzzle is already Solved. (Target in starting_digit)")
 
     def printer_setter(self, function: callable) -> None:
         self._printer = function
@@ -76,7 +68,7 @@ class DigitSolver:
         counter_list: list,
         discovered: set,
         solutions: list,
-        tasks: list
+        tasks: list,
     ) -> None:
         def make_recursive_call(
             base_list: list,
@@ -85,7 +77,7 @@ class DigitSolver:
             step: list,
             op: str,
             old_num1: int,
-            old_num2: int
+            old_num2: int,
         ) -> None:
             new_num = int(new_num)
             next_base_list = base_list + [new_num]
@@ -94,14 +86,16 @@ class DigitSolver:
             if temp in discovered:
                 return
             discovered.add(temp)
-            tasks.append((
-                next_base_list,
-                target_num,
-                step + [f"{old_num1} {op} {old_num2} = {new_num}"],
-                counter_list,
-                discovered,
-                solutions
-            ))
+            tasks.append(
+                (
+                    next_base_list,
+                    target_num,
+                    step + [f"{old_num1} {op} {old_num2} = {new_num}"],
+                    counter_list,
+                    discovered,
+                    solutions,
+                )
+            )
 
         def pretty_print(step: list, op: str, num1: int, num2: int) -> None:
             step = step + [f"{num1} {op} {num2} = {self._target_digit}"]
@@ -124,7 +118,7 @@ class DigitSolver:
             templist = numbers[:]
             num1, num2 = templist.pop(i2), templist.pop(i1)
             for op in OPERATIONS:
-                if op == '÷' and num2 == 0:
+                if op == "÷" and num2 == 0:
                     continue
                 combined_num = OPERATIONS[op](num1, num2)
                 if combined_num == target:
@@ -157,7 +151,7 @@ class DigitSolver:
             counter_list,
             discovered,
             solutions,
-            odd_generation
+            odd_generation,
         )
         gen = 1
         # Wait for all tasks to complete with a timeout
@@ -182,7 +176,7 @@ class DigitSolver:
                 self._calc_answer(*processing.pop(), storing)
             elif not processing and not storing:
                 if not self._printer:
-                  print("done:)")
+                    print("done:)")
                 break
             else:
                 gen += 1
