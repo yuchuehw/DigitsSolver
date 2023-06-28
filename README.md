@@ -20,6 +20,7 @@ Digits Solver is a Python program that solves a digits puzzle game by finding ma
 
 ## Demo
 You can see the algorithm in action here(click the green run button after redirected.):
+
 [![Replit](https://img.shields.io/badge/DEMO-REPL.IT-purple.svg?style=flat&logo=replit)](https://replit.com/@yuchuehw/DigitsSolver)
 
 ## Table of Contents
