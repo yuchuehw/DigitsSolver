@@ -68,3 +68,4 @@ def combine_numbers(driver, step_list, buttons):
 
 def back_to_puzzles_button_click(driver):
     click_element("back-to-puzzles-button", "back to puzzles button doesn't work!")
+ 
