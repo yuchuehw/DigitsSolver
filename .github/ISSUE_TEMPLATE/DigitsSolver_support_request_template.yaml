@@ -1,5 +1,4 @@
 name: Community Support Request
-about: Request support from the community
 title: "[Support]: "
 labels: ["community-support"]
 assignees:
@@ -24,5 +23,3 @@ body:
       label: Additional Information
       description: Add any additional information or context that may be helpful.
 
-required:
-  - description
