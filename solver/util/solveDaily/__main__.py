@@ -21,13 +21,16 @@ sys.path.append("/".join(path))
 
 from solver.solver import DigitSolver
 
+
 def main():
     chrome_options = Options()
-    chrome_options.add_argument('--no-sandbox')
-    chrome_options.add_argument('--disable-dev-shm-usage')
-    
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+
     driver = webdriver.Chrome(options=chrome_options)
-    driver.get('https://www.nytimes.com/games/digits')  # Replace with the actual URL of the game
+    driver.get(
+        "https://www.nytimes.com/games/digits"
+    )  # Replace with the actual URL of the game
 
     play_button_click(driver)
     close_help_button_click(driver)
@@ -43,8 +46,8 @@ def main():
 
         for step in solution[0]:
             print(step)
-            step_list = step.split(' ')
-            combine_numbers(driver,step_list, buttons)
+            step_list = step.split(" ")
+            combine_numbers(driver, step_list, buttons)
 
         if question == 4:
             input("Press Enter to exit the program")
@@ -53,6 +56,7 @@ def main():
         next_puzzle_button_click(driver)
 
     driver.quit()
+
 
 if __name__ == "__main__":
     main()
