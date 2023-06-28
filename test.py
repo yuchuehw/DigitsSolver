@@ -15,4 +15,4 @@ def test_solve_no_solution():
     solver = DigitSolver([1, 2, 3, 4], 100)
     solution_found = solver.solve()
     # Assert that no solution is found
-    assert(solution_found <= 0)
+    assert(solution_found == 0)
