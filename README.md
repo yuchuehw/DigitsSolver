@@ -1,7 +1,7 @@
 <p align="center">
     <picture>
       <img 
-        src="logo.png" 
+        src="new_logo.png" 
         alt="VueTube icon"
         width="500"
        />
