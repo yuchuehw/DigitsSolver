@@ -5,61 +5,86 @@ labels: ["support"]
 assignees:
   - octocat
 
-description: |
-  <!-- Provide a clear and concise description of the issue or problem you are experiencing. -->
+body:
+  - type: markdown
+    attributes:
+      value: |
+        <!-- Provide a clear and concise description of the issue or problem you are experiencing. -->
 
-steps:
-  - name: Description
-    description: Provide a clear and concise description of the issue or problem you are experiencing.
-    type: textarea
-    required: true
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: Provide a clear and concise description of the issue or problem you are experiencing.
+      required: true
 
-  - name: Steps to Reproduce
-    description: If applicable, provide a detailed step-by-step guide on how to reproduce the issue.
-    type: textarea
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: If applicable, provide a detailed step-by-step guide on how to reproduce the issue.
 
-  - name: Expected Behavior
-    description: Describe what you expected to happen.
-    type: textarea
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe what you expected to happen.
 
-  - name: Actual Behavior
-    description: Describe what is currently happening or the error message/behavior you are encountering.
-    type: textarea
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: Describe what is currently happening or the error message/behavior you are encountering.
 
-environment:
-  - name: Project Version
-    description: Specify the version or release number of the project.
-    type: input
-    required: true
+  - type: input
+    id: project-version
+    attributes:
+      label: Project Version
+      description: Specify the version or release number of the project.
+      required: true
 
-  - name: Operating System
-    description: Mention the operating system and version you are using.
-    type: input
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating System
+      description: Mention the operating system and version you are using.
 
-  - name: Python Version
-    description: Specify the Python version you are using.
-    type: input
+  - type: input
+    id: python-version
+    attributes:
+      label: Python Version
+      description: Specify the Python version you are using.
 
-  - name: Additional Information
-    description: Provide any other relevant information about your environment.
-    type: input
+  - type: input
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: Provide any other relevant information about your environment.
 
-screenshots:
-  - name: Screenshots
-    description: If applicable, add screenshots to help explain the issue.
-    type: upload
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the issue.
 
-logs:
-  - name: Logs or Error Messages
-    description: If applicable, include any relevant logs or error messages related to the issue.
-    type: textarea
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or Error Messages
+      description: If applicable, include any relevant logs or error messages related to the issue.
 
-code:
-  - name: Code Snippets
-    description: If applicable, include any relevant code snippets that might help identify the problem.
-    type: textarea
+  - type: textarea
+    id: code
+    attributes:
+      label: Code Snippets
+      description: If applicable, include any relevant code snippets that might help identify the problem.
 
-context:
-  - name: Additional Context
-    description: Add any other context or information about the issue that may be helpful.
-    type: textarea
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context or information about the issue that may be helpful.
+
+required:
+  - description
+  - project-version
