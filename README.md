@@ -1,4 +1,13 @@
-# Digits Solver
+<p align="center">
+    <picture>
+      <img 
+        src="logo.png" 
+        alt="VueTube icon"
+        width="500"
+       />
+    </picture>
+<p>
+
 Digits Solver is a Python program that solves a digits puzzle game by finding mathematical operations that can be applied to a set of starting digits to obtain a target digit.
 
 [![python badge](https://img.shields.io/badge/Python-3776AB?style=flat&for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
