@@ -1,0 +1,65 @@
+name: Support Request
+about: Request assistance or support for the project
+title: "[Support]: "
+labels: ["support"]
+assignees:
+  - octocat
+
+description: |
+  <!-- Provide a clear and concise description of the issue or problem you are experiencing. -->
+
+steps:
+  - name: Description
+    description: Provide a clear and concise description of the issue or problem you are experiencing.
+    type: textarea
+    required: true
+
+  - name: Steps to Reproduce
+    description: If applicable, provide a detailed step-by-step guide on how to reproduce the issue.
+    type: textarea
+
+  - name: Expected Behavior
+    description: Describe what you expected to happen.
+    type: textarea
+
+  - name: Actual Behavior
+    description: Describe what is currently happening or the error message/behavior you are encountering.
+    type: textarea
+
+environment:
+  - name: Project Version
+    description: Specify the version or release number of the project.
+    type: input
+    required: true
+
+  - name: Operating System
+    description: Mention the operating system and version you are using.
+    type: input
+
+  - name: Python Version
+    description: Specify the Python version you are using.
+    type: input
+
+  - name: Additional Information
+    description: Provide any other relevant information about your environment.
+    type: input
+
+screenshots:
+  - name: Screenshots
+    description: If applicable, add screenshots to help explain the issue.
+    type: upload
+
+logs:
+  - name: Logs or Error Messages
+    description: If applicable, include any relevant logs or error messages related to the issue.
+    type: textarea
+
+code:
+  - name: Code Snippets
+    description: If applicable, include any relevant code snippets that might help identify the problem.
+    type: textarea
+
+context:
+  - name: Additional Context
+    description: Add any other context or information about the issue that may be helpful.
+    type: textarea
