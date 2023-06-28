@@ -1,6 +1,7 @@
 import concurrent.futures
 import os
 import sys
+
 ## temporary implementation ##
 path = os.path.abspath(__file__).split("/")
 path.pop()
@@ -14,8 +15,9 @@ from solver.solver import DigitSolver
 
 Executor = concurrent.futures.ThreadPoolExecutor
 
+
 def main():
-    os.system('clear')
+    os.system("clear")
     holding_list = []
 
     def mf(step: list) -> None:
@@ -39,7 +41,9 @@ def main():
                 try:
                     valid_numbers.append(int(num))
                 except ValueError:
-                    print(f"Invalid input: {num}. Please enter integers separated by spaces.")
+                    print(
+                        f"Invalid input: {num}. Please enter integers separated by spaces."
+                    )
                     break
             if len(valid_numbers) == len(number_list):
                 return valid_numbers
@@ -54,24 +58,28 @@ def main():
 
     number_list = []
     while not number_list:
-        number_list = get_integer_list_input("Enter numbers allowed separated by space: ")
+        number_list = get_integer_list_input(
+            "Enter numbers allowed separated by space: "
+        )
         if not number_list:
             print("Invalid input. Please enter at least one valid integer.")
 
-    os.system('clear')
+    os.system("clear")
     target = get_integer_input("Enter the target number: ")
-    os.system('clear')
+    os.system("clear")
 
     solver = DigitSolver(number_list, target)
     solver.printer_setter(mf)
 
     with Executor() as executor:
         future = executor.submit(solver.solve)
-        print("Use the enter key to loop through possible solutions. Press <Ctrl>+C to exit.")
+        print(
+            "Use the enter key to loop through possible solutions. Press <Ctrl>+C to exit."
+        )
         while True:
             try:
                 input()
-                os.system('clear')
+                os.system("clear")
             except KeyboardInterrupt:
                 print("Program end.")
                 break
