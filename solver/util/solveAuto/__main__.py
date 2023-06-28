@@ -1,9 +1,9 @@
-from solveMany import play_button_click
-from solveMany import close_help_button_click
-from solveMany import read_problem
-from solveMany import combine_numbers
-from solveMany import next_puzzle_button_click
-from solveMany import back_to_puzzles_button_click
+from solveAuto import play_button_click
+from solveAuto import close_help_button_click
+from solveAuto import read_problem
+from solveAuto import combine_numbers
+from solveAuto import next_puzzle_button_click
+from solveAuto import back_to_puzzles_button_click
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
