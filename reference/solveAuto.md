@@ -46,12 +46,12 @@ solveAuto [-h] [[-start S] [-level L] | [-daily]]
 
 1. Solve 10 levels starting from level 5:
    ```plaintext
-   solveAuto --startLevel 5 --levelToPlay 10
+   python solver/util/solveAuto --startLevel 5 --levelToPlay 10
    ```
 
 2. Solve daily puzzles only:
    ```plaintext
-   solveAuto --dailyOnly
+   python solver/util/solveAuto --dailyOnly
    ```
 
 Note: If no arguments are provided, the tool will use default settings (start from level 1 to level 20).
