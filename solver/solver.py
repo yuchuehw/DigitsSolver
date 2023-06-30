@@ -1,7 +1,8 @@
 """
 The solver.solver module provides functionality to solve the Digits game.
 
-The Digits game is a numerical puzzle where the objective is to reach a target digit by combining a set of starting digits using basic arithmetic operations.
+The Digits game is a numerical puzzle where the objective is to reach a target digit by 
+combining a set of starting digits using basic arithmetic operations.
 
 The module includes a DigitSolver class that can be used to solve the game and find the solutions.
 
@@ -49,12 +50,14 @@ class DigitSolver:
         solver = DigitSolver([4, 8, 9, 12, 15, 18], 453)
         solutions = solver.solve()
     """
+
     def __init__(self, starting_digits: iter, target_digit: int):
         """
         Create a DigitSolver object to solve the Digits game.
 
         Args:
-            starting_digits (iterable): An iterable containing the starting digits of the game (preferably a list).
+            starting_digits (iterable): An iterable containing the starting digits
+            of the game (preferably a list).
             target_digit (int): The target digit of the puzzle.
 
         Returns:
@@ -64,9 +67,12 @@ class DigitSolver:
             - Throws a warning if there is no solution or if the game is already solved.
 
         Raises:
-            - TypeError: If the starting_digits cannot be sorted using the `sorted` function.
-            - ValueError: If the starting_digits are not integers or if they are not in a 1-dimensional format.
-            - ValueError: If the target_digit is not an integer or if it is smaller than 0.
+            - TypeError: If the starting_digits cannot be sorted using the `sorted`
+            function.
+            - ValueError: If the starting_digits are not integers
+            or if they are not in a 1-dimensional format.
+            - ValueError: If the target_digit is not an integer
+            or if it is smaller than 0.
         """
 
         if not isinstance(target_digit, int) or target_digit < 0:
@@ -76,8 +82,10 @@ class DigitSolver:
 
         try:
             starting_digits = sorted(starting_digits)
-        except Exception:
-            raise TypeError("starting_digits must be a iter and applied to sorted()")
+        except Exception as sorting_error:
+            raise TypeError(
+                "starting_digits must be an iterable and applicable to sorted()"
+            ) from sorting_error
 
         if not all(isinstance(digit, int) for digit in starting_digits):
             raise ValueError("members of starting_digits must be integers")
@@ -115,7 +123,9 @@ class DigitSolver:
 
     def printer_setter(self, function: callable) -> None:
         """
-        Customizes and replaces the pretty print function with the specified function. The DigitSolver class always calls this function with one argument, steps, which is a list of steps to solve the problem.
+        Customizes and replaces the pretty print function with the specified function.
+        The DigitSolver class always calls this function with one argument, steps,
+        which is a list of steps to solve the problem.
 
         Args:
         function (callable): A callable function to set as the pretty print function.
@@ -129,7 +139,6 @@ class DigitSolver:
         if not callable(function):
             raise TypeError("function must be a callable object")
         self._printer = function
-        return
 
     def _calc_answer(
         self,
@@ -146,7 +155,9 @@ class DigitSolver:
         Args:
         numbers (list): A sorted list of usable numbers at each position.
         target (int): The target number to reach.
-        steps (list): A list of previous steps to reach the current position (empty initially).
+        steps (list): A list of previous steps to reach the current position
+        (empty initially).
+
         discovered (set): A set of discovered position(sorted tuples).
         solutions (list): A 2d list of found solutions(set version of steps).
         sorted by solution length(eg:one step->0 two->1 ...).
@@ -171,7 +182,8 @@ class DigitSolver:
             Args:
             numbers (list): A sorted list of usable numbers at the next position.
             target (int): The target number to reach.
-            steps (list): A list of previous steps to reach this newly discovered position.
+            steps (list): A list of previous steps to reach this
+            newly discovered position.
 
             Returns:
             None: Stores the values to a list.
@@ -199,7 +211,9 @@ class DigitSolver:
 
         def check_n_print(step: tuple) -> bool:
             """
-            Detects if the solution is solved inefficiently by comparing it to previously computed solutions. Calls the pretty print function if the solution is efficient.
+            Detects if the solution is solved inefficiently
+            by comparing it to previously computed solutions.
+            Calls the pretty print function if the solution is efficient.
 
             Args:
             steps (list): A list of all steps to reach the solution.
@@ -211,9 +225,9 @@ class DigitSolver:
             None: No explicit exceptions are raised.
             """
             frozen_step = frozenset(step)
-            for x in range(len(step) - 1):
-                for o in solutions[x]:
-                    if o.issubset(frozen_step):
+            for solution_length in range(len(step) - 1):
+                for solution_ in solutions[solution_length]:
+                    if solution_.issubset(frozen_step):
                         return False
             solutions[len(step) - 1].append(frozen_step)
             pretty_print(step)
@@ -236,14 +250,16 @@ class DigitSolver:
                 print("solution found:", *step, "", sep="\n")
             else:
                 self._printer(step)
-            return
 
-        def generate_new_step(step: list, op: str, num1: int, num2: int) -> tuple:
+        def generate_new_step(
+            step: list, operator_: str, num1: int, num2: int
+        ) -> tuple:
             """
-            Generates a new step by appending the current step with the provided operator and numbers.
+            Generates a new step by appending the current step with the
+            provided operator and numbers.
 
             Args:
-            op (str): The operator string.
+            operator_ (str): The operator string.
             num1 (int): The first number.
             num2 (int): The second number.
 
@@ -253,27 +269,27 @@ class DigitSolver:
             Raises:
             None: No explicit exceptions are raised.
             """
-            return step + [f"{num1} {op} {num2} = {self._target_digit}"]
+            return step + [f"{num1} {operator_} {num2} = {self._target_digit}"]
 
         # use combinations to generate two index.
-        for i1, i2 in combinations(range(len(numbers)), 2):
+        for i, j in combinations(range(len(numbers)), 2):
             templist = numbers[:]
             # pop the index in the back first.
-            num1, num2 = templist.pop(i2), templist.pop(i1)
-            for op in OPERATIONS:
+            num1, num2 = templist.pop(j), templist.pop(i)
+            for operator_, operatrion_ in OPERATIONS.items():
                 # check for division by 0
-                if op == "÷" and num2 == 0:
+                if operator_ == "÷" and num2 == 0:
                     continue
-                combined_num = OPERATIONS[op](num1, num2)
+                combined_num = operatrion_(num1, num2)
                 if combined_num == target:
                     combined_num = int(combined_num)
-                    new_step = generate_new_step(step, op, num1, num2)
+                    new_step = generate_new_step(step, operator_, num1, num2)
                     check_n_print(new_step)
                 # ignore fraction and negative numbers
                 elif combined_num >= 0 and int(combined_num) == combined_num:
                     combined_num = int(combined_num)
                     new_numbers = sorted(templist + [combined_num])
-                    new_step = generate_new_step(step, op, num1, num2)
+                    new_step = generate_new_step(step, operator_, num1, num2)
                     que_recursive_call(new_numbers, target, new_step)
 
     def solve(self, one_solution: bool = False) -> int:
@@ -291,7 +307,7 @@ class DigitSolver:
         """
         if self._has_no_solution:
             return 0
-        elif self._already_solved:
+        if self._already_solved:
             if self._printer:
                 self._printer([self._target_digit])
             else:
@@ -318,9 +334,11 @@ class DigitSolver:
         start_time = time.time()
         end_time = start_time + timeout
         remaining_time = end_time - time.time()
+        solution_count = 0
         while remaining_time > 0:
-            # end early if one solution is found and only need one solution.
-            if one_solution and counter_list[0] == 1:
+            # update solution count and end early if necessary.
+            solution_count = sum(len(x) for x in solutions)
+            if one_solution and solution_count == 1:
                 break
             # generation were broken into even or odd
             # you process either even or odd and store the next generation
