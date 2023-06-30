@@ -1,3 +1,26 @@
+"""
+The solver.solver module provides functionality to solve the Digits game.
+
+The Digits game is a numerical puzzle where the objective is to reach a target digit by combining a set of starting digits using basic arithmetic operations.
+
+The module includes a DigitSolver class that can be used to solve the game and find the solutions.
+
+Usage:
+    from solver.solver import DigitSolver
+
+    # Create a DigitSolver object
+    solver = DigitSolver(starting_digits, target_digit)
+
+    # Solve the game and get the solutions
+    solutions = solver.solve()
+
+    # Print solution count
+    print(f"{solutions} solution(s) found")
+
+Author: Yu-Chueh Wang
+Version: 1.6.6
+"""
+
 from itertools import combinations
 import operator
 import time
@@ -12,6 +35,20 @@ OPERATIONS = {
 
 
 class DigitSolver:
+    """
+    A class for solving the Digits game.
+
+    Attributes:
+        starting_digits (list): A list of starting digits for the game.
+        target_digit (int): The target digit of the puzzle.
+
+    Methods:
+        solve: Solves the Digits game and returns the solutions found.
+
+    Example usage:
+        solver = DigitSolver([4, 8, 9, 12, 15, 18], 453)
+        solutions = solver.solve()
+    """
     def __init__(self, starting_digits: iter, target_digit: int):
         """
         Create a DigitSolver object to solve the Digits game.
@@ -89,7 +126,7 @@ class DigitSolver:
         Raises:
         TypeError: If the provided function is not callable.
         """
-        if not collable(function):
+        if not callable(function):
             raise TypeError("function must be a callable object")
         self._printer = function
         return
@@ -232,7 +269,7 @@ class DigitSolver:
                     combined_num = int(combined_num)
                     new_step = generate_new_step(step, op, num1, num2)
                     check_n_print(new_step)
-
+                # ignore fraction and negative numbers
                 elif combined_num >= 0 and int(combined_num) == combined_num:
                     combined_num = int(combined_num)
                     new_numbers = sorted(templist + [combined_num])
@@ -256,12 +293,12 @@ class DigitSolver:
             return 0
         elif self._already_solved:
             if self._printer:
-                self._printer(self._target_digit)
+                self._printer([self._target_digit])
             else:
-                print(f"solution found:\n{self._target_digit}")
+                print("solution found:")
+                print(self._target_digit)
             return 1
 
-        counter_list = [0]
         solutions = [[] for x in range(len(self._starting_digits) - 1)]
         step = []
         discovered = set()
@@ -303,5 +340,5 @@ class DigitSolver:
             else:
                 gen += 1
             remaining_time = end_time - time.time()
-
-        return sum(len(x) for x in solutions)
+        solution_count = sum(len(x) for x in solutions)
+        return solution_count
