@@ -30,7 +30,7 @@ You could also watch this speed run that uses this algorithm:
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-
+*note: the demo uses the solveAuto features continue reading for more info*
 ## Table of Contents
 - [Usage](#usage)
 - [Examples](#examples)
@@ -96,6 +96,7 @@ I have also included a few additional Python programs that complement the solver
 
 Feel free to explore these files and utilize them for specific use cases or scenarios.
 
+*apendix folder included 450 problems used in the NYT Games. Feel free to use those problem for program testing*
 
 ## Contributing
 
