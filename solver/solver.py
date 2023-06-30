@@ -1,10 +1,11 @@
 """
 The solver.solver module provides functionality to solve the Digits game.
 
-The Digits game is a numerical puzzle where the objective is to reach a target digit by 
+The Digits game is a numerical puzzle where the objective is to reach a target digit by
 combining a set of starting digits using basic arithmetic operations.
 
-The module includes a DigitSolver class that can be used to solve the game and find the solutions.
+The module includes a DigitSolver class that can be used to solve the game
+and find the solutions.
 
 Usage:
     from solver.solver import DigitSolver
@@ -19,7 +20,7 @@ Usage:
     print(f"{solutions} solution(s) found")
 
 Author: Yu-Chueh Wang
-Version: 1.6.6
+Version: 1.7.0
 """
 
 from itertools import combinations
