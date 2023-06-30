@@ -19,7 +19,7 @@ Before using `prettySolve.py`, make sure you have the following:
 3. Run the program using the following command:
 
    ```bash
-   python solver/util/prettySolve
+   python solver/util/pretty_solve
    ```
 
 4. Follow the on-screen instructions to provide the required inputs.
