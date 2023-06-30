@@ -1,12 +1,43 @@
-from solveAuto import play_button_click
-from solveAuto import close_help_button_click
-from solveAuto import read_problem
-from solveAuto import combine_numbers
-from solveAuto import next_puzzle_button_click
-from solveAuto import back_to_puzzles_button_click
+"""
+Digits Automation
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+This script automates the solving of the Digits game on The New York Times website using
+Selenium WebDriver. It interacts with the game interface, reads the puzzle information,
+applies the Digits solver algorithm, and progresses through the levels automatically.
+
+The automation process involves launching a web browser (Google Chrome) using Selenium
+WebDriver, navigating to the Digits game page on The New York Times website, and
+simulating user actions to solve each puzzle. The script utilizes the `solve_auto`
+module for various actions, such as clicking buttons, reading the puzzle, combining
+numbers, and progressing to the next puzzle.
+
+The script supports different modes of operation:
+- Automatic play from a specified starting level to a given number of levels.
+- Automatic play of the daily puzzle only.
+- Interactive mode for manually specifying the starting level and the number of levels
+to play.
+
+To use the script, the following dependencies are required:
+- Selenium WebDriver: Install using `pip install selenium`.
+- ChromeDriver: Download the appropriate ChromeDriver executable for your Chrome browser
+version and place it in the system's PATH.
+
+Module Dependencies:
+- `solve_auto`: Provides functions for interacting with the Digits game interface.
+
+Usage:
+Run the script with the desired command-line options to automate the Digits game solving process.
+
+Command-Line Options:
+- `-start`, `--startLevel S`: Specifies the starting level (integer).
+- `-level`, `--levelToPlay L`: Specifies the total number of levels to play (integer).
+- `-daily`, `--dailyOnly`: Solves the daily puzzle only.
+
+
+Author: Yu-Chueh Wang
+Version: 1.7.0
+"""
+
 from collections import defaultdict
 from datetime import datetime
 import argparse
@@ -14,43 +45,74 @@ import time
 import os
 import sys
 
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+from solve_auto import play_button_click, close_help_button_click, read_problem, combine_numbers, next_puzzle_button_click, back_to_puzzles_button_click
+
+
 ## temporary implementation ##
 path = os.path.abspath(__file__).split("/")
 path.pop()
-timeshiftpath = "/".join(path) + "/TimeShift.js"
+TIMESHIFTPATH = "/".join(path) + "/TimeShift.js"
 path.pop()
 path.pop()
 path.pop()
 sys.path.append("/".join(path))
+from solver.solver import DigitSolver
 ## temporary implementation ##
 
-from solver.solver import DigitSolver
+
 
 LEVEL_0_TIME = 1680998400000
 ONE_DAY = 86400000
 
 
-def dailyPuzzleInfo() -> int:
+def daily_puzzle_info() -> int:
     """
-    return today's puzzle level
+    Returns the level of today's puzzle.
+
+    Returns:
+        int: The level of today's puzzle.
     """
     now = time.time()
     level = (now * 1000 - LEVEL_0_TIME) // ONE_DAY
     return int(level)
 
 
-def puzzleLevelToTime(level: int) -> int:
+def puzzle_level_to_time(level: int) -> int:
+    """
+    Converts a puzzle level to a time value in milliseconds.
+
+    Args:
+        level (int): The puzzle level.
+
+    Returns:
+        int: The corresponding time value in milliseconds.
+    """
     return LEVEL_0_TIME + level * ONE_DAY
 
 
-def getDate(time_: int) -> str:
+def get_date(time_: int) -> str:
     """
-    time in millisecond to a formatted date string.
+    Converts a time value in milliseconds to a formatted date string.
+
+    Args:
+        time_ (int): The time value in milliseconds.
+
+    Returns:
+        str: The formatted date string.
     """
     return datetime.fromtimestamp(time_ // 1000).strftime("%B %d, %Y")
 
 
-def init_parser() -> argparse:
+def init_parser() -> argparse.ArgumentParser:
+    """
+    Initializes the command-line argument parser.
+
+    Returns:
+        argparse.ArgumentParser: The initialized argument parser.
+    """
     usage = "%(prog)s [-h] [[-start S] [-level L] | [-d]]"
     parser = argparse.ArgumentParser(description="Automatic Digits solver", usage=usage)
 
@@ -61,7 +123,7 @@ def init_parser() -> argparse:
         type=int,
         metavar="S",
         dest="start",
-        help="starting level(int)",
+        help="starting level (int)",
     )
     parser.add_argument(
         "-level",
@@ -70,7 +132,7 @@ def init_parser() -> argparse:
         type=int,
         metavar="L",
         dest="level",
-        help="total level to play(int)",
+        help="total level to play (int)",
     )
     parser.add_argument(
         "-daily",
@@ -82,7 +144,15 @@ def init_parser() -> argparse:
     return parser
 
 
-def automation(start_level, level_to_play, click_close: bool = False):
+def automation(start_level: int, level_to_play: int, click_close: bool = False) -> None:
+    """
+    Automates the Digits game solving process.
+
+    Args:
+        start_level (int): The starting level.
+        level_to_play (int): The total number of levels to play.
+        click_close (bool, optional): Whether to click the "Close Help" button. Defaults to False.
+    """
     chrome_options = Options()
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
@@ -90,15 +160,15 @@ def automation(start_level, level_to_play, click_close: bool = False):
     driver = webdriver.Chrome(options=chrome_options)
     # Read TimeShift.js
     inject = ""
-    with open(timeshiftpath, "r") as f:
+    with open(TIMESHIFTPATH, "r", encoding="utf-8") as f:
         inject = f.read()
 
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {"source": inject})
     level = start_level
-    time_ = puzzleLevelToTime(start_level)
+    time_ = puzzle_level_to_time(start_level)
 
-    for level_played in range(level_to_play):
-        puzzle_date = getDate(time_)
+    for _ in range(level_to_play):
+        puzzle_date = get_date(time_)
         print(f"Now solving puzzle #{level} ({puzzle_date})")
 
         driver.get("https://www.nytimes.com/games/digits")
@@ -137,7 +207,10 @@ def automation(start_level, level_to_play, click_close: bool = False):
     print("done")
 
 
-def main():
+def main() -> None:
+    """
+    The main function for running the Digits solver.
+    """
     parser = init_parser()
     args = parser.parse_args()
 
@@ -152,7 +225,7 @@ def main():
         print(warning)
 
     elif args.daily:
-        start_level = dailyPuzzleInfo()
+        start_level = daily_puzzle_info()
         level_to_play = 1
         automation(start_level, level_to_play, True)
     elif args.start and args.level:
@@ -163,7 +236,7 @@ def main():
         automation(start_level, level_to_play, True)
     else:
         warning = f"""usage: {sys.argv[0]} [-h] [[-start S] [-level L] | [-d]]
-    error: argument -start and -level must be use simultaneously"""
+    error: argument -start and -level must be used simultaneously"""
         print(warning)
 
 
