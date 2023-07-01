@@ -1,18 +1,19 @@
 from pylint.lint import Run
 from pylint.reporters.text import TextReporter
 from pybadges import badge
-
+import os
 grade = 0
 color = ""
 
-with open("pylint.out", "w") as f:
+abs = os.path.abspath(__file__).split("/")
+abs.pop()
+abs = "/".join(abs)+"/"
+
+with open(abs+"pylint.out", "w") as f:
     reporter = TextReporter(f)
-    Run(["/solver"], reporter=reporter, exit=False)
+    Run([abs+"solver"], reporter=reporter, exit=False)
 
-with open("pylint.out", "w") as f:
-    f.write("Your code has been rated at 9.04/10 (previous run: 9.04/10, +0.00)")
-
-with open("pylint.out","r") as f:
+with open(abs+"pylint.out","r") as f:
     f=f.read()
     target = "Your code has been rated at "
     f = f[f.index(target)+len(target):]
@@ -31,5 +32,5 @@ else:
 
 s = badge(left_text='pylint score', right_text=str(grade), right_color=color)
 
-with open("pylint_badge.svg", "w") as f:
+with open(abs+"pylint_badge.svg", "w") as f:
     f.write(s)
