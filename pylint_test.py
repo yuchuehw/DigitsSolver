@@ -28,7 +28,7 @@ elif grade <= 6.0:
 elif grade <= 8.4:
     color = '#9cfa40'
 else:
-    color = '#red'
+    color = '#60f83d'
 
 s = badge(left_text='pylint score', right_text=str(grade), right_color=color)
 
