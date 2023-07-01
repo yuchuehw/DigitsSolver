@@ -22,6 +22,11 @@ jobs:
     - name: Analysing the code with pylint
       run: |
             python pylint_test.py
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: pylint_badge.svg
+        path: pylint_out/
     - name: Debugging
       run: |
         echo "Current directory: $(pwd)"
