@@ -2,8 +2,8 @@ from pylint.lint import Run
 from pylint.reporters.text import TextReporter
 from pybadges import badge
 import os
-grade = 0
-color = ""
+grade = None
+color = None
 
 abs = "/home/runner/work/DigitsSolver/DigitsSolver/"
 
