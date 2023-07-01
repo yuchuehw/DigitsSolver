@@ -21,4 +21,8 @@ jobs:
         pip install pylint
     - name: Analysing the code with pylint
       run: |
-        python pylint_test.py
+            python pylint_test.py
+    - name: Debugging
+      run: |
+        echo "Current directory: $(pwd)"
+        echo "File list: $(ls -al)"
