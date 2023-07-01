@@ -8,6 +8,7 @@ color = ""
 abs = os.path.abspath(__file__).split("/")
 abs.pop()
 abs = "/".join(abs)+"/"
+print(abs)
 
 with open(abs+"pylint.out", "w") as f:
     reporter = TextReporter(f)
