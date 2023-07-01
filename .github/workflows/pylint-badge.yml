@@ -34,5 +34,7 @@ jobs:
         path: pylint.out
     - name: Debugging
       run: |
+        git config --global user.name "Yu-Chueh Wang"
+        git config --global user.email yuchuehw@outlook.com
         git commit pylint_badge.svg
         git commit pylint.out
