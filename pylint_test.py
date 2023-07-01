@@ -5,12 +5,9 @@ import os
 grade = 0
 color = ""
 
-abs = os.path.abspath(__file__).split("/")
-abs.pop()
-abs = "/".join(abs)+"/"
-print(abs)
+abs = "/home/runner/work/DigitsSolver/DigitsSolver/"
 
-with open(abs+"pylint.out", "w") as f:
+with open(abs+"pylint.out", "w+") as f:
     reporter = TextReporter(f)
     Run([abs+"solver"], reporter=reporter, exit=False)
 
@@ -33,5 +30,5 @@ else:
 
 s = badge(left_text='pylint score', right_text=str(grade), right_color=color)
 
-with open(abs+"pylint_badge.svg", "w") as f:
+with open(abs+"pylint_badge.svg", "w+") as f:
     f.write(s)
