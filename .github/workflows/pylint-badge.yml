@@ -36,5 +36,5 @@ jobs:
       run: |
         git config --global user.name "Yu-Chueh Wang"
         git config --global user.email yuchuehw@outlook.com
-        git commit pylint_badge.svg
-        git commit pylint.out
+        git commit pylint_badge.svg -m "Merge"
+        git commit pylint.out -m "Merge"
