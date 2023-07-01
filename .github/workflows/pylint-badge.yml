@@ -22,19 +22,11 @@ jobs:
     - name: Analysing the code with pylint
       run: |
             python pylint_test.py
-    - name: Upload artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: pylint_badge.svg
-        path: pylint_badge.svg
-    - name: Upload artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: pylint.out
-        path: pylint.out
+    
     - name: Debugging
       run: |
         git config --global user.name "Yu-Chueh Wang"
         git config --global user.email yuchuehw@outlook.com
         git commit pylint_badge.svg -m "Merge"
         git commit pylint.out -m "Merge"
+        git push
