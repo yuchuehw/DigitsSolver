@@ -27,7 +27,12 @@ jobs:
       with:
         name: pylint_badge.svg
         path: pylint_badge.svg
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1
+      with:
+        name: pylint.out
+        path: pylint.out
     - name: Debugging
       run: |
-        echo "Current directory: $(pwd)"
-        echo "File list: $(ls -al)"
+        git commit pylint_badge.svg
+        git commit pylint.out
