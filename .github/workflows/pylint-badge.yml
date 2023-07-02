@@ -1,4 +1,4 @@
-name: Pylint
+name: Pylint Badge Update
 
 on: [push]
 
@@ -23,7 +23,7 @@ jobs:
       run: |
             python pylint_test.py
     
-    - name: Debugging
+    - name: Push new badge
       run: |
         git config --global user.name "Yu-Chueh Wang"
         git config --global user.email yuchuehw@outlook.com
