@@ -23,4 +23,3 @@ executable in the system's PATH before using the `solve_auto` submodule.
 Author: [Your Name]
 Version 1.7.1
 """
-
