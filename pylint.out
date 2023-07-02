@@ -1,12 +1,8 @@
-runid:qtcoojditc
+runid:tttigjvsbg
 ************* Module solver.__main__
 solver/__main__.py:41:0: E0611: No name 'DigitSolver' in module 'solver' (no-name-in-module)
 ************* Module solver.util.__init__
-solver/util/__init__.py:4:0: C0301: Line too long (153/100) (line-too-long)
-solver/util/__init__.py:6:0: C0301: Line too long (264/100) (line-too-long)
-solver/util/__init__.py:8:0: C0301: Line too long (197/100) (line-too-long)
-solver/util/__init__.py:14:0: C0301: Line too long (154/100) (line-too-long)
-solver/util/__init__.py:19:0: C0305: Trailing newlines (trailing-newlines)
+solver/util/__init__.py:26:0: C0305: Trailing newlines (trailing-newlines)
 ************* Module solver.util.pretty_solve.__init__
 solver/util/pretty_solve/__init__.py:1:0: C0305: Trailing newlines (trailing-newlines)
 ************* Module solver.util.pretty_solve.__main__
@@ -41,5 +37,5 @@ solver/util/solve_auto/__main__.py:189:34: W0108: Lambda may not be necessary (u
 solver/util/solve_auto/__main__.py:189:44: W0640: Cell variable solution defined in loop (cell-var-from-loop)
 
 -----------------------------------
-Your code has been rated at 7.96/10
+Your code has been rated at 8.07/10
 
