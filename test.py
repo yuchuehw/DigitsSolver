@@ -1,59 +1,78 @@
 """
-This is a test file that is used to test the functionality of the `DigitSolver` class in `solver.py`.
-It contains multiple test cases to validate different scenarios of solving digit puzzles. The main usage
-of this file is to run the tests using pytest by executing `pytest test.py`.
+This script is used to generate a Pylint badge based on the Pylint score of the `solver` module.
+It runs Pylint on the module and writes the Pylint score to a file named `pylint.out`. Then, it
+extracts the score from the file, determines the appropriate color for the badge based on the score,
+and generates an SVG badge using the `pybadges` library. The generated badge is saved as `pylint_badge.svg`.
+
+Usage:
+------
+To generate the Pylint badge, execute the following command in the terminal:
+    python pylint_test.py
 
 Note:
 -----
-Additional test cases can be added to this file to further test the `DigitSolver` class.
-
-Example Usage:
---------------
-To run the tests using pytest, execute the following command in the terminal:
-    pytest test.py
+1. Do not relocate or move this file, as it is being used to generate the Pylint badge in the workflow.
 
 """
 
-from solver.solver import DigitSolver
+from pylint.lint import Run
+from pylint.reporters.text import TextReporter
+from pybadges import badge
+import random
+import string
 
-
-def test_solve_single_solution():
+def randomword(length):
     """
-    Test case to validate the solving of a puzzle with a single solution.
+    Generate a random word of the specified length.
 
-    The test creates a `DigitSolver` object with the provided digits and target value.
-    It then calls the `solve()` method and asserts that at least one solution is found.
+    Parameters:
+    length (int): Length of the random word to generate.
 
-    """
-    solver = DigitSolver([8, 11, 13, 18, 23, 24], 407)
-    solution_found = solver.solve()
-    # Assert that at least one solution is found
-    assert solution_found > 0
-
-
-def test_solve_multiple_solutions():
-    """
-    Test case to validate the solving of a puzzle with multiple solutions.
-
-    The test creates a `DigitSolver` object with the provided digits and target value.
-    It then calls the `solve()` method and asserts that multiple solutions are found.
+    Returns:
+    str: Randomly generated word.
 
     """
-    solver = DigitSolver([2, 4, 6, 8], 12)
-    solution_found = solver.solve()
-    # Assert that multiple solutions are found
-    assert solution_found > 1
+    letters = string.ascii_lowercase
+    return ''.join(random.choice(letters) for _ in range(length))
 
+if __name__ == "__main__":
+    run_id = randomword(10)
+    grade = None
+    color = None
+    abs = "/home/runner/work/DigitsSolver/DigitsSolver/"
 
-def test_solve_no_solution():
-    """
-    Test case to validate the handling of a puzzle with no solution.
+    with open(abs + "pylint.out", "w+") as f:
+        f.write(f"runid:{run_id}\n")
+        reporter = TextReporter(f)
+        Run([abs + "solver"], reporter=reporter, exit=False)
 
-    The test creates a `DigitSolver` object with the provided digits and target value.
-    It then calls the `solve()` method and asserts that no solution is found.
+    with open(abs + "pylint.out", "r") as f:
+        content = f.read()
+        target = "Your code has been rated at "
+        if target in content:
+            content = content[content.index(target) + len(target):]
+            content = content[:content.index("/")]
+        else:
+            content = ""
+        if content:
+            grade = float(content)
 
-    """
-    solver = DigitSolver([1, 2, 3, 4], 100)
-    solution_found = solver.solve()
-    # Assert that no solution is found
-    assert solution_found == 0
+    if not grade or grade <= 1.2:
+        color = '#e7241d'
+    elif grade <= 3.6:
+        color = '#ef832c'
+    elif grade <= 6.0:
+        color = '#fffd46'
+    elif grade <= 8.4:
+        color = '#9cfa40'
+    else:
+        color = '#60f83d'
+
+    if not grade:
+        grade = "fatal"
+
+    badge_text = badge(left_text='pylint score', right_text=str(grade), right_color=color)
+
+    with open(abs + "pylint_badge.svg", "w+") as f:
+        f.write(f"<!-- runid:{run_id} -->\n")
+        f.write(badge_text)
