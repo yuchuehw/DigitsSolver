@@ -1,18 +1,10 @@
-runid:qxiuwxuxbb
+runid:qwzijmtybp
 ************* Module solver.__main__
 solver/__main__.py:41:0: E0611: No name 'DigitSolver' in module 'solver' (no-name-in-module)
 ************* Module solver.util.pretty_solve.__init__
 solver/util/pretty_solve/__init__.py:1:0: C0305: Trailing newlines (trailing-newlines)
 ************* Module solver.util.pretty_solve.__main__
-solver/util/pretty_solve/__main__.py:4:0: C0301: Line too long (105/100) (line-too-long)
-solver/util/pretty_solve/__main__.py:5:0: C0301: Line too long (113/100) (line-too-long)
-solver/util/pretty_solve/__main__.py:6:0: C0301: Line too long (112/100) (line-too-long)
-solver/util/pretty_solve/__main__.py:16:0: C0301: Line too long (107/100) (line-too-long)
-solver/util/pretty_solve/__main__.py:37:0: C0413: Import "from solver.solver import DigitSolver" should be placed at the top of the module (wrong-import-position)
-solver/util/pretty_solve/__main__.py:56:4: C0103: Function name "mf" doesn't conform to snake_case naming style (invalid-name)
-solver/util/pretty_solve/__main__.py:83:12: R1722: Consider using 'sys.exit' instead (consider-using-sys-exit)
-solver/util/pretty_solve/__main__.py:156:38: W0108: Lambda may not be necessary (unnecessary-lambda)
-solver/util/pretty_solve/__main__.py:42:0: R0915: Too many statements (51/50) (too-many-statements)
+solver/util/pretty_solve/__main__.py:39:0: C0413: Import "from solver.solver import DigitSolver" should be placed at the top of the module (wrong-import-position)
 ************* Module solver.util.solve_auto.solve_auto
 solver/util/solve_auto/solve_auto.py:18:0: E0401: Unable to import 'selenium.webdriver.common.by' (import-error)
 solver/util/solve_auto/solve_auto.py:19:0: E0401: Unable to import 'selenium.webdriver.support.wait' (import-error)
@@ -36,5 +28,5 @@ solver/util/solve_auto/__main__.py:189:34: W0108: Lambda may not be necessary (u
 solver/util/solve_auto/__main__.py:189:44: W0640: Cell variable solution defined in loop (cell-var-from-loop)
 
 -----------------------------------
-Your code has been rated at 8.18/10
+Your code has been rated at 8.42/10
 
