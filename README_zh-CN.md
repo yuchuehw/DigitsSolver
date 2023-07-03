@@ -8,6 +8,17 @@
     </picture>
 <p>
 
+[English](README.md)
+ • [繁體中文](README_zh-TW.md)
+ • 简体中文
+ • [日本語](README_ja.md)
+ • [Español](README_es.md)
+ • [Français](README_fr.md)
+ • [Italiano](README_it.md)
+ • [Deutsche](README_de.md)
+ • [Русский](README_ru.md)
+
+
 Digits Solver 是一个使用 Python 编写的程序，通过找到可应用于一组起始数字以获得目标数字的数学运算来解决一个数字拼图游戏。
 
 [![Python 应用](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
