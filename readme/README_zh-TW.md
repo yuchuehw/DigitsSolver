@@ -47,14 +47,14 @@ uchuehw/DigitsSolver?style=flat&color=yellow)](LICENSE.md)
 
 ## 目錄
 
-- [安裝](#installation)
-- [用法](#usage)
-- [範例](#examples)
-- [替代用法](#alternative-usage)
-- [實用模組](#util-modules)
-- [貢獻](#contributing)
-- [許可證](#license)
-- [鳴謝](#acknowledgements)
+- [安裝](#安裝)
+- [用法](#用法)
+- [範例](#範例)
+- [替代用法](#替代用法)
+- [Util 模組](#Util-模組)
+- [貢獻](#貢獻)
+- [許可證](#許可證)
+- [鳴謝](#鳴謝)
 
 ## 安裝
 
