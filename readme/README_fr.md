@@ -104,8 +104,8 @@ print(f"nous avons trouvé {compteur_solution} solution(s)")
 
 J'ai également inclus quelques autres programmes Python supplémentaires qui complètent le programme solver. Vous pouvez trouver des instructions détaillées sur l'utilisation de chacun de ces programmes ci-dessous:
 
-- [Comment utiliser pretty_solve.py](reference/prettySolve.md): Fournit une version visuellement améliorée du programme solver.
-- [Comment utiliser solve_auto.py](reference/solveAuto.md): Résolveur de chiffres entièrement automatique avec Selenium.
+- [Comment utiliser pretty_solve.py](prettySolve.md): Fournit une version visuellement améliorée du programme solver.
+- [Comment utiliser solve_auto.py](solveAuto.md): Résolveur de chiffres entièrement automatique avec Selenium.
 
 N'hésitez pas à explorer ces fichiers et à les utiliser pour des cas d'utilisation ou des scénarios spécifiques.
 
