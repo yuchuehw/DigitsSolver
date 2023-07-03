@@ -2,7 +2,7 @@
     <picture>
       <img 
         src="new_logo.png" 
-        alt="VueTube Icon"
+        alt="Digits Solver Icon"
         width="500"
        />
     </picture>
