@@ -106,8 +106,8 @@ print(f"我们找到了 {solution_count} 个解决方案")
 
 我还包含了一些其他的 Python 程序，它们与 solver 程序相辅相成。您可以在下面找到有关如何使用每个程序的详细说明：
 
-- [如何使用 pretty_solve.py](reference/prettySolve.md)：提供了一个视觉增强版的 solver 程序。
-- [如何使用 solve_auto.py](reference/solveAuto.md)：具有 Selenium 的全自动 Digits solver
+- [如何使用 pretty_solve.py](prettySolve.md)：提供了一个视觉增强版的 solver 程序。
+- [如何使用 solve_auto.py](solveAuto.md)：具有 Selenium 的全自动 Digits solver
 
 请随意探索这些文件，并根据特定的用例或场景利用它们。
 
