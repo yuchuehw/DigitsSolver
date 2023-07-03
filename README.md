@@ -127,9 +127,7 @@ print(f"We found {solution_count} solution(s)")
 We have also included a few additional Python programs that complement the solver program. They are located inside the solver/util folder. You can read more about how to use them here:
 
 - [How to Use pretty_solve.py](readme/prettySolve.md): Provides a visually enhanced version of the solver program.
-- [How to Use solve
-
-_auto.py](readme/solveAuto.md): Fully automatic Digits solver with Selenium
+- [How to Use solve_auto.py](readme/solveAuto.md): Fully automatic Digits solver with Selenium
 
 Feel free to explore these files and utilize them for specific use cases or scenarios.
 
