@@ -19,6 +19,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.remote.webdriver import WebDriver
+from selenium.common.exceptions import TimeoutException
 
 
 def read_problem(driver: WebDriver, buttons: Dict[str, List[int]]) -> str:
@@ -57,7 +58,7 @@ def click_element(driver: WebDriver, element_id: str, error_message: str) -> Non
         WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ID, element_id))
         ).click()
-    except:
+    except TimeoutException:
         input(f"I am stuck, {error_message}")
 
 
@@ -104,7 +105,7 @@ def number_button_click(driver: WebDriver, button_id: str, error_message: str) -
         WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.ID, button_id))
         ).click()
-    except:
+    except TimeoutException:
         input(f"I am stuck, {error_message}")
 
 
@@ -121,7 +122,7 @@ def wait_til_combine(driver: WebDriver, button_id: str, expect_value: str) -> No
         WebDriverWait(driver, 10).until(
             EC.text_to_be_present_in_element((By.ID, button_id), expect_value)
         )
-    except:
+    except TimeoutException:
         input("I am stuck, the number doesn't seem to combine!")
 
 
