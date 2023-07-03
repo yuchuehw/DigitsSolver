@@ -9,19 +9,19 @@
 <p>
 
 English
- • [繁體中文](https://github.com/yuchuehw/DigitsSolver/readme/README_zh-TW.md)
- • [简体中文](https://github.com/yuchuehw/DigitsSolver/readme/README_zh-CN.md)
- • [日本語](https://github.com/yuchuehw/DigitsSolver/readme/README_ja.md)
- • [Español](https://github.com/yuchuehw/DigitsSolver/readme/README_es.md)
- • [Français](https://github.com/yuchuehw/DigitsSolver/readme/README_fr.md)
- • [Italiano](https://github.com/yuchuehw/DigitsSolver/readme/README_it.md)
- • [Deutsche](https://github.com/yuchuehw/DigitsSolver/readme/README_de.md)
- • [Русский](https://github.com/yuchuehw/DigitsSolver/readme/README_ru.md)
+ • [繁體中文](readme/README_zh-TW.md)
+ • [简体中文](readme/README_zh-CN.md)
+ • [日本語](readme/README_ja.md)
+ • [Español](readme/README_es.md)
+ • [Français](readme/README_fr.md)
+ • [Italiano](readme/README_it.md)
+ • [Deutsche](readme/README_de.md)
+ • [Русский](readme/README_ru.md)
 
 Digits Solver is a Python program that solves a digits puzzle game by finding mathematical operations that can be applied to a set of starting digits to obtain a target digit.
 
-[![Python application](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
-[![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
+[![Python application](actions/workflows/python-app.yml/badge.svg)](actions/workflows/python-app.yml)
+[![CodeQL](actions/workflows/github-code-scanning/codeql/badge.svg)](actions/workflows/github-code-scanning/codeql)
 [![PyLint Score](https://raw.githubusercontent.com/yuchuehw/DigitsSolver/main/pylint_badge.svg)](pylint.out)
 <br>
 [![python badge](https://img.shields.io/badge/Python-3776AB?style=flat&for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
@@ -102,8 +102,8 @@ print(f"we found {solution_count} solution(s)")
 
 I have also included a few additional Python programs that complement the solver program. You can find detailed instructions on how to use each of these programs below:
 
-- [How to Use pretty_solve.py](reference/prettySolve.md): Provides a visually enhanced version of the solver program.
-- [How to Use solve_auto.py](reference/solveAuto.md): Fully automatic Digits solver with Selenium
+- [How to Use pretty_solve.py](reference/pretty_solve.md): Provides a visually enhanced version of the solver program.
+- [How to Use solve_auto.py](reference/solve_auto.md): Fully automatic Digits solver with Selenium
 
 Feel free to explore these files and utilize them for specific use cases or scenarios.
 
