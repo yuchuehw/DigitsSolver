@@ -14,9 +14,8 @@
  • [日本語](README_ja.md)
  • [Español](README_es.md)
  • [Français](README_fr.md)
+ • [Italiano](README_it.md)
  • [Deutsche](README_de.md)
- • [Italiano](README_it.md)
- • [Italiano](README_it.md)
  • [Русский](README_ru.md)
 
 Digits Solver is a Python program that solves a digits puzzle game by finding mathematical operations that can be applied to a set of starting digits to obtain a target digit.
