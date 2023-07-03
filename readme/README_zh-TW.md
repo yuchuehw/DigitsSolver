@@ -2,7 +2,7 @@
     <picture>
       <img 
         src="https://raw.githubusercontent.com/yuchuehw/DigitsSolver/main/new_logo.png" 
-        alt="Digits Solver icon"
+        alt="Digits Solver 圖示"
         width="500"
        />
     </picture>
