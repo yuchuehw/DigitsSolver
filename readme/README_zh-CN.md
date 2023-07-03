@@ -102,7 +102,7 @@ python solver <starting_digits> <target_digit> [-os] [-h]
 
 3. 注意，起始数字必须位于目标数字之前。这是一个包含 8 个起始数字的谜题示例：
    ```bash
-   python solver 2 3 5 7 11 13 17 19 21 -os
+   python solver 2 3 5 7 11 13 17 19 323 -os
    ```
 
 ## 输出
