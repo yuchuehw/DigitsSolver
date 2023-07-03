@@ -18,8 +18,7 @@
  • [Deutsche](README_de.md)
  • [Русский](README_ru.md)
 
-
-Bienvenido a Digits Solver, un programa Python indispensable diseñado para conquistar el juego de Digits desarrollado por The New York Times. Sumérgete en el cautivador mundo de los desafíos numéricos mientras manipulas estratégicamente un conjunto de dígitos iniciales utilizando operaciones matemáticas para alcanzar el esquivo dígito objetivo. Con su poderoso algoritmo y análisis meticuloso, Digits Solver te permite desentrañar rápidamente cada rompecabezas, ofreciendo soluciones paso a paso con una precisión inquebrantable. Eleva tus habilidades para resolver acertijos y desbloquea los secretos ocultos entre los dígitos. Experimenta el compañero definitivo para dominar el juego Digits.
+Bienvenido a Digits Solver, un programa Python indispensable diseñado para conquistar el juego de [Digits](https://www.nytimes.com/games/digits) desarrollado por The New York Times. Sumérgete en el cautivador mundo de los desafíos numéricos mientras manipulas estratégicamente un conjunto de dígitos iniciales utilizando operaciones matemáticas para alcanzar el esquivo dígito objetivo. Con su poderoso algoritmo y análisis meticuloso, Digits Solver te permite desentrañar rápidamente cada rompecabezas, ofreciendo soluciones paso a paso con una precisión inquebrantable. Eleva tus habilidades para resolver acertijos y desbloquea los secretos ocultos entre los dígitos. Experimenta el compañero definitivo para dominar el juego Digits.
 
 [![Aplicación de Python](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
 [![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
