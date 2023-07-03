@@ -17,9 +17,8 @@
  • [Italiano](README_it.md)
  • [Deutsche](README_de.md)
  • [Русский](README_ru.md)
-握「Digits」游戏的终极伴侣。
 
-「Digits Solver」へようこそ。この必須のPythonプログラムは、ニューヨークタイムズが開発した[Digits](https://www.nytimes.com/games/digits)パズルゲームを攻略するために設計されました。数字の魅力に浸りながら、数学の演算を駆使して出発点の数字を操作し、目標の数字を見つけ出す戦略を展開してください。強力なアルゴリズムと緻密な分析により、Digits Solverは各パズルを迅速に解き明かし、一歩ずつ確実な解答を提供します。パズル解決のスキルを高め、数字の中に隠された秘密を解き放ちましょう。Digitsゲームのマスターにとって欠かせない最高のパートナーを体験してください。
+「Digits Solver」へようこそ。この必須のPythonプログラムは、ニューヨークタイムズが開発したDigitsパズルゲームを攻略するために設計されました。数字の魅力に浸りながら、数学の演算を駆使して出発点の数字を操作し、目標の数字を見つけ出す戦略を展開してください。強力なアルゴリズムと緻密な分析により、Digits Solverは各パズルを迅速に解き明かし、一歩ずつ確実な解答を提供します。パズル解決のスキルを高め、数字の中に隠された秘密を解き放ちましょう。Digitsゲームのマスターにとって欠かせない最高のパートナーを体験してください。
 
 [![Python アプリケーション](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
 [![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
@@ -105,8 +104,8 @@ print(f"解が {solution_count} つ見つかりました")
 
 solver プログラムを補完するいくつかの追加の Python プログラムも含まれています。これらの各プログラムの使用方法についての詳しい説明は、以下で確認できます：
 
-- [pretty_solve.py の使用方法](reference/prettySolve.md): solver プログラムの視覚的に向上させたバージョンを提供します。
-- [solve_auto.py の使用方法](reference/solveAuto.md): Selenium を使用したフルオートマチックな Digits solver
+- [pretty_solve.py の使用方法](prettySolve.md): solver プログラムの視覚的に向上させたバージョンを提供します。
+- [solve_auto.py の使用方法](solveAuto.md): Selenium を使用したフルオートマチックな Digits solver
 
 これらのファイルを探索して、特定の使用ケースやシナリオに活用してください。
 
