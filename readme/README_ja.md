@@ -8,116 +8,141 @@
     </picture>
 <p>
 
-[English](README.md)
+English
  • [繁體中文](README_zh-TW.md)
  • [简体中文](README_zh-CN.md)
- • 日本語
+ • [日本語](README_ja.md)
  • [Español](README_es.md)
  • [Français](README_fr.md)
  • [Italiano](README_it.md)
  • [Deutsche](README_de.md)
  • [Русский](README_ru.md)
 
-「Digits Solver」へようこそ。この必須のPythonプログラムは、ニューヨークタイムズが開発したDigitsパズルゲームを攻略するために設計されました。数字の魅力に浸りながら、数学の演算を駆使して出発点の数字を操作し、目標の数字を見つけ出す戦略を展開してください。強力なアルゴリズムと緻密な分析により、Digits Solverは各パズルを迅速に解き明かし、一歩ずつ確実な解答を提供します。パズル解決のスキルを高め、数字の中に隠された秘密を解き放ちましょう。Digitsゲームのマスターにとって欠かせない最高のパートナーを体験してください。
+Digits Solverへようこそ。これは、The New York Timesが開発した数独パズルゲーム[Digits](https://www.nytimes.com/games/digits)を攻略するための究極のPython補助ツールです。数字のチャレンジに飛び込み、戦略的な操作の技術を習得する魅惑的な世界に没入してください。Digits Solverを使用すると、数学の演算を使って一連の初期数字を戦略的に操作し、目標とする数字に到達することができます。その強力なアルゴリズムと緻密な分析により、各パズルを迅速に解き明かし、一歩一歩確実な解答を提供します。パズル解決の腕前を高め、数字に隠された秘密を解き放ちましょう。Digitsのマスターになるためのエキサイティングな旅の準備をしてください！
 
-[![Python アプリケーション](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
+[![Python application](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
 [![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
-[![PyLint スコア](https://raw.githubusercontent.com/yuchuehw/DigitsSolver/main/pylint_badge.svg)](pylint.out)
+[![PyLint Score](https://raw.githubusercontent.com/yuchuehw/DigitsSolver/main/pylint_badge.svg)](pylint.out)
 <br>
-[![Python バッジ](https://img.shields.io/badge/Python-3776AB?style=flat&for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![python badge](https://img.shields.io/badge/Python-3776AB?style=flat&for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Selenium](https://img.shields.io/badge/Selenium-grey.svg?style=flat&logo=selenium)](https://www.selenium.dev/)
 [![TimeShift](https://img.shields.io/badge/TimeShift.js-grey.svg?style=flat&logo=javascript)](https://github.com/plaa/TimeShift-js)
-![貢献歓迎](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&color=pink)
-[![ライセンス](https://img.shields.io/github/license/yuchuehw/DigitsSolver?style=flat&color=yellow)](LICENSE.md)
-[![コードスタイル: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&color=pink)
+[![License](https://img.shields.io/github/license/yuchuehw/DigitsSolver?style=flat&color=yellow)](LICENSE.md)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 ![HitCount](https://hits.dwyl.com/yuchuehw/DigitsSolver.svg?style=flat)
 
 ## デモ
-アルゴリズムの実行例はこちらでご覧いただけます（リダイレクト後、緑色の実行ボタンをクリックしてください）：
+リダイレクト後、緑色の実行ボタンをクリックしてアルゴリズムを動作させる様子をご覧ください：
 
-[![Replit](https://img.shields.io/badge/デモ-REPL.IT-purple.svg?style=flat&logo=replit)](https://replit.com/@yuchuehw/DigitsSolver)
+[![Replit](https://img.shields.io/badge/DEMO-REPL.IT-purple.svg?style=flat&logo=replit)](https://replit.com/@yuchuehw/DigitsSolver)
 
-また、このアルゴリズムを使用したスピードラン動画もご覧いただけます：
+また、Digits Solverアルゴリズムを使用したスピードランもご覧いただけます：
 
-[![Replit](https://img.shields.io/badge/デモ-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
+[![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*注意: このデモでは solveAuto 機能を使用しています。詳細は続きを読んでください*
+*注意：デモでは[solve_auto](solveAuto.md)機能を紹介しています。詳細については続けて読んでください。*
+
 ## 目次
-- [使用法](#使用法)
+
+- [インストール](#インストール)
+- [使用方法](#使用方法)
 - [例](#例)
-- [代替使用法](#代替使用法)
-- [貢献](#貢献)
+- [代替の使用方法](#代替の使用方法)
+- [Utilモジュール](#utilモジュール)
+- [貢献方法](#貢献方法)
 - [ライセンス](#ライセンス)
+- [謝辞](#謝辞)
 
+## インストール
 
-## 使用法
+次のいずれかの方法でDigits Solverプログラムのコピーを取得できます：
 
-Digits Solver プログラムを実行するには、次のコマンドを実行します:
+1. **リポジトリをクローンする**：
+   ```bash
+   git clone https://github.com/yuchuehw/DigitsSolver.git
+   ```
+
+2. **Zipファイルをダウンロードする**：
+   - GitHubリポジトリの[Release](https://github.com/yuchuehw/DigitsSolver/releases)タブに移動します。
+   - 最新のリリースのzipファイルをダウンロードします。
+   - zipファイルの内容を任意の場所に展開します。
+
+プログラムを取得したら、Digits Solverプログラムを実行するために[使用方法](#使用方法)セクションに進むことができます。
+
+## 使用方法
+
+Digits Solverプログラムを実行するには、ターミナルを開き、DigitsSolverリポジトリをダウンロードまたはクローンしたディレクトリに移動します。適切なディレクトリに移動したら、ターミナルで以下のコマンドを実行します（角括弧内の値を入力値で置き換えてください。詳細については[例](#例)セクションを参照してください）：
 
 ```bash
-git clone https://github.com/yuchuehw/DigitsSolver
-cd ./DigitSolver
 python solver <starting_digits> <target_digit> [-os] [-h]
 ```
 
-- `<starting_digits>`: 開始数字を表す整数のリスト（スペース区切り）。
-- `<target_digit>`: 獲得する必要がある目標数字。
-- `-os` または `--onesolution`（オプション）: 指定された場合、プログラムは1つの解決策のみを見つけます。それ以外の場合は、すべての可能な解決策を見つけます。
-- `-h` または `--help`（オプション）: 使用すると、ヘルプメニューが表示されます。
+- `<starting_digits>`: 初期数字を表す整数
+
+のスペース区切りのリストです。
+- `<target_digit>`: 目標とする数字です。
+- `-os`または`--onesolution`（オプション）：指定された場合、プログラムは1つの解だけを見つけます。それ以外の場合は、すべての可能な解を見つけます。
+- `-h`または`--help`（オプション）：使用すると、ヘルプメニューが表示されます。
 
 ## 例
 
-1. 数字のパズルのすべての解を見つける場合:
+1. 数字パズルのすべての解を見つける：
    ```bash
    python solver 3 12 15 20 23 25 439
    ```
 
-2. 数字のパズルの1つの解のみを見つける場合:
+2. 数字パズルの解を1つだけ見つける：
    ```bash
    python solver 3 12 15 20 23 25 439 -os
    ```
 
+3. 注意：starting_digitsは常にtarget_digitsの前にあります。これは8つのstarting_digitsを持つパズルの例です：
+   ```bash
+   python solver 2 3 5 7 11 13 17 19 323 -os
+   ```
+
 ## 出力
 
-プログラムは見つかった解の数を出力し、以下の形式で各解を表示します:
+プログラムは見つかった解の数を出力し、各解を次の形式で表示します：
 
 ```
-解が見つかりました:
+解が見つかりました：
 15 + 3 = 18
 23 × 18 = 414
 414 + 25 = 439
 
-解が 1 つ見つかりました
+解が1つ見つかりました
 ```
 
-## 代替使用法
-Digits Solver は Python モジュールとしてもインポートして、プログラム上で使用することもできます。以下は使用例です:
+## 代替の使用方法
+
+Digits SolverはPythonモジュールとしてインポートしてプログラム内で使用することもできます。提供されたもの以上の機能を追加することができます。以下は、インポートとして使用する最小限の例です：
 
 ```python
 from solver.solver import DigitSolver
+
 solver = DigitSolver([3, 12, 15, 20, 23, 25], 439)
+# 括弧内のFalseはオプションです。Falseはすべての解を解きます。Trueは1つの解を解きます。
+# solve.printer = some_functionを使用してデフォルトの出力動作を上書きします。
 solution_count = solver.solve(False)
-print(f"解が {solution_count} つ見つかりました")
+print(f"{solution_count} 個の解が見つかりました")
 ```
 
-## その他のファイル
+## Utilモジュール
 
-solver プログラムを補完するいくつかの追加の Python プログラムも含まれています。これらの各プログラムの使用方法についての詳しい説明は、以下で確認できます：
+solver.utilフォルダ内には、solverプログラムを補完するいくつかの追加のPythonプログラムも含まれています。これらの使用方法については、こちらをご覧ください：
 
-- [pretty_solve.py の使用方法](prettySolve.md): solver プログラムの視覚的に向上させたバージョンを提供します。
-- [solve_auto.py の使用方法](solveAuto.md): Selenium を使用したフルオートマチックな Digits solver
+- [pretty_solve.pyの使用方法](prettySolve.md)：solverプログラムの視覚的に向上したバージョンを提供します。
+- [solve_auto.pyの使用方法](solveAuto.md)：Seleniumを使用した完全自動のDigitsソルバー
 
-これらのファイルを探索して、特定の使用ケースやシナリオに活用してください。
+これらのファイルを探索し、特定のユースケースやシナリオに活用してください。
 
-*apendix フォルダには、NYT Games で使用された450の
+*Appendixフォルダには、NYT Gamesで使用される数独のいくつかのサンプルゲームが含まれています。興味がある場合は、参照してみてください。*
 
-問題も含まれています。これらの問題をプログラムのテストに使用しても構いません*
+## 貢献方法
 
-## 貢献
-
-Digits Solver プログラムへの貢献は歓迎します！問題を見つけた場合や改善の提案がある場合は、GitHub リポジトリで問題をオープンしたりプルリクエストを送信したりしてください。
-
-貢献する際には、ベストプラクティスに従い、コードの品質を維持し、変更の説明を明確に提供してください。
+Digits Solverはオープンソースプロジェクトであり、コミュニティからの貢献を歓迎しています。バグの報告や機能の提案、コードの改善など、さまざまな形で貢献することができます。[Contribution Guidelines](CONTRIBUTING.md)を参照してください。
 
 ## ライセンス
 
