@@ -18,7 +18,7 @@
  • [Deutsche](README_de.md)
  • [Русский](README_ru.md)
 
-Digits Solver 是一個使用 Python 開發的程式，它通過尋找可以應用於一組起始數字以獲得目標數字的數學運算來解決數字拼圖遊戲。
+歡迎使用「Digits Solver」，這是一個不可或缺的 Python 程式，專為紐約時報開發的 Digits 數字益智遊戲而設計。在這個引人入勝的數字挑戰世界中，您將以策略性地運用數學運算，操作一組起始數字，以達到所追求的目標數字。憑藉其強大的演算法和細致入微的分析，「Digits Solver」能夠快速解開每個謎題，並提供一步一步的解決方案，精準無誤。提升您的益智解謎能力，揭開數字背後的秘密。體驗成為掌握「Digits」遊戲的終極夥伴。
 
 [![Python application](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
 [![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
