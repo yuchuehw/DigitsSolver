@@ -1,8 +1,8 @@
 <p align="center">
     <picture>
       <img 
-        src="new_logo.png" 
-        alt="Icona VueTube"
+        src="https://raw.githubusercontent.com/yuchuehw/DigitsSolver/main/new_logo.png" 
+        alt="Icona Digits Solver"
         width="500"
        />
     </picture>
