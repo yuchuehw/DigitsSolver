@@ -186,7 +186,7 @@ def automation(start_level: int, level_to_play: int, click_close: bool = False) 
             target = read_problem(driver, buttons)
 
             solver = DigitSolver([int(x) for x in buttons], int(target))
-            solver.printer_setter(lambda x: solution.append(x))
+            solver.printer = lambda x: solution.append(x)
             solver.solve(True)
             print(list(buttons), target)
 
