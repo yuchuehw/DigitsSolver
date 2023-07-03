@@ -1,22 +1,22 @@
 <p align="center">
     <picture>
       <img 
-        src="new_logo.png" 
-        alt="VueTube 圖示"
+        src="https://raw.githubusercontent.com/yuchuehw/DigitsSolver/main/new_logo.png" 
+        alt="Digits Solver icon"
         width="500"
        />
     </picture>
 <p>
-    
-[English](README.md)
+
+English
  • 繁體中文
- • [简体中文](README_zh-CN.md)
- • [日本語](README_ja.md)
- • [Español](README_es.md)
- • [Français](README_fr.md)
- • [Italiano](README_it.md)
- • [Deutsche](README_de.md)
- • [Русский](README_ru.md)
+ • [简体中文](https://github.com/yuchuehw/DigitsSolver/readme/README_zh-CN.md)
+ • [日本語](https://github.com/yuchuehw/DigitsSolver/readme/README_ja.md)
+ • [Español](https://github.com/yuchuehw/DigitsSolver/readme/README_es.md)
+ • [Français](https://github.com/yuchuehw/DigitsSolver/readme/README_fr.md)
+ • [Italiano](https://github.com/yuchuehw/DigitsSolver/readme/README_it.md)
+ • [Deutsche](https://github.com/yuchuehw/DigitsSolver/readme/README_de.md)
+ • [Русский](https://github.com/yuchuehw/DigitsSolver/readme/README_ru.md)
 
 Digits Solver 是一個使用 Python 開發的程式，它通過尋找可以應用於一組起始數字以獲得目標數字的數學運算來解決數字拼圖遊戲。
 
