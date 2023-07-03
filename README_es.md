@@ -8,6 +8,17 @@
     </picture>
 <p>
 
+[English](README.md)
+ • [繁體中文](README_zh-TW.md)
+ • [简体中文](README_zh-CN.md)
+ • [日本語](README_ja.md)
+ • Español
+ • [Français](README_fr.md)
+ • [Italiano](README_it.md)
+ • [Deutsche](README_de.md)
+ • [Русский](README_ru.md)
+
+
 Digits Solver es un programa Python que resuelve un juego de puzzle de dígitos encontrando operaciones matemáticas que se pueden aplicar a un conjunto de dígitos iniciales para obtener un dígito objetivo.
 
 [![Aplicación de Python](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
