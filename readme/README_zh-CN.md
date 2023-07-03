@@ -9,8 +9,8 @@
 <p>
 
 [English](README_en.md)
- • 繁體中文
- • [简体中文](README_zh-CN.md)
+ • [繁體中文](README_zh-TW.md)
+ • 简体中文
  • [日本語](README_ja.md)
  • [Español](README_es.md)
  • [Français](README_fr.md)
