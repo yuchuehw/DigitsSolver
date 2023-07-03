@@ -53,24 +53,13 @@ def main() -> None:
     Returns:
         None
     """
-    def custom_printer(step: list) -> None:
-        """
-        Custom printer function to store steps in the holding list.
-    
-        Args:
-            step (list): A list of steps to solve the Digits game.
-    
-        Returns:
-            None
-        """
-        holding_list.append(step)
     os.system("clear")
     holding_list = []
     number_list = get_number_list_from_user()
     target = get_target_from_user()
 
     solver = initialize_solver(number_list, target)
-    solver.printer = custom_printer
+    solver.printer = holding_list.append
 
     with Executor() as executor:
         future = executor.submit(solver.solve)
