@@ -102,8 +102,8 @@ print(f"we found {solution_count} solution(s)")
 
 I have also included a few additional Python programs that complement the solver program. You can find detailed instructions on how to use each of these programs below:
 
-- [How to Use pretty_solve.py](reference/pretty_solve.md): Provides a visually enhanced version of the solver program.
-- [How to Use solve_auto.py](reference/solve_auto.md): Fully automatic Digits solver with Selenium
+- [How to Use pretty_solve.py](reference/prettySolve.md): Provides a visually enhanced version of the solver program.
+- [How to Use solve_auto.py](reference/solveAuto.md): Fully automatic Digits solver with Selenium
 
 Feel free to explore these files and utilize them for specific use cases or scenarios.
 
