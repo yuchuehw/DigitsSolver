@@ -1,4 +1,7 @@
-runid:ojgdwqtrdr
+runid:emtqxdipdl
+************* Module solver.solver
+solver/solver.py:280:0: C0301: Line too long (103/100) (line-too-long)
+solver/solver.py:209:4: R0913: Too many arguments (6/5) (too-many-arguments)
 ************* Module solver.__main__
 solver/__main__.py:41:0: E0611: No name 'DigitSolver' in module 'solver' (no-name-in-module)
 ************* Module solver.util.pretty_solve.__init__
@@ -21,5 +24,5 @@ solver/util/solve_auto/__main__.py:189:29: W0108: Lambda may not be necessary (u
 solver/util/solve_auto/__main__.py:189:39: W0640: Cell variable solution defined in loop (cell-var-from-loop)
 
 -----------------------------------
-Your code has been rated at 9.39/10
+Your code has been rated at 9.34/10
 
