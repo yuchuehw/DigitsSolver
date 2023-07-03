@@ -8,6 +8,7 @@
     </picture>
 <p>
 
+## Languages
 English
  • [繁體中文](readme/README_zh-TW.md)
  • [简体中文](readme/README_zh-CN.md)
@@ -74,7 +75,7 @@ After obtaining the program, you can proceed to the [Usage](#usage) section to r
 
 ## Usage
 
-To run the Digits Solver program, open the terminal and navigate to the directory where you have downloaded or cloned the DigitsSolver repository. Once you are in the appropriate directory, execute the following command in the terminal (replace values in angle brackets with your input; see examples section for more details):
+To run the Digits Solver program, open the terminal and navigate to the directory where you have downloaded or cloned the DigitsSolver repository. Once you are in the appropriate directory, execute the following command in the terminal (replace values in angle brackets with your input; see [Examples](#example) section section for more details):
 
 ```bash
 python solver <starting_digits> <target_digit> [-os] [-h]
@@ -95,6 +96,12 @@ python solver <starting_digits> <target_digit> [-os] [-h]
 2. Find only one solution for the digits puzzle:
    ```bash
    python solver 3 12 15 20 23 25 439 -os
+   ```
+
+
+3. Note starting_digits always go before target_digits. This is an example of puzzle with 8 starting_digits:
+   ```bash
+   python solver 2 3 5 7 11 13 17 19 21 -os
    ```
 
 ## Output
@@ -118,6 +125,8 @@ The Digits Solver can also be imported as a Python module and used programmatica
 from solver.solver import DigitSolver
 
 solver = DigitSolver([3, 12, 15, 20, 23, 25], 439)
+# False in the paranthesis is optional. False solve all solution. True solve one solution.
+# use solve.printer = some_function to override default output behavior.
 solution_count = solver.solve(False)
 print(f"We found {solution_count} solution(s)")
 ```
