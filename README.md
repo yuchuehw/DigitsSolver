@@ -8,7 +8,7 @@
     </picture>
 <p>
 
-[English](README.md)
+English
  • [繁體中文](README_zh-TW.md)
  • [简体中文](README_zh-CN.md)
  • [日本語](README_ja.md)
