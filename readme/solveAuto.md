@@ -91,6 +91,6 @@ Feel free to modify the code according to your specific requirements.
 
 ## License
 
-This script is provided under the [MIT License](LICENSE).
+This script is provided under the [MIT License](LICENSE.md).
 
 Please note that the documentation assumes you have already set up the necessary environment and dependencies as mentioned in the "Prerequisites" section.
