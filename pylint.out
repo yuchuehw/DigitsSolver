@@ -1,12 +1,8 @@
-runid:nxcsvatseg
+runid:urdwpgseiz
 ************* Module solver.__main__
 solver/__main__.py:41:0: E0611: No name 'DigitSolver' in module 'solver' (no-name-in-module)
-************* Module solver.util.pretty_solve.__init__
-solver/util/pretty_solve/__init__.py:1:0: C0305: Trailing newlines (trailing-newlines)
 ************* Module solver.util.pretty_solve.__main__
 solver/util/pretty_solve/__main__.py:39:0: C0413: Import "from solver.solver import DigitSolver" should be placed at the top of the module (wrong-import-position)
-************* Module solver.util.solve_auto.__init__
-solver/util/solve_auto/__init__.py:1:0: C0305: Trailing newlines (trailing-newlines)
 ************* Module solver.util.solve_auto.__main__
 solver/util/solve_auto/__main__.py:51:0: E0401: Unable to import 'solve_auto' (import-error)
 solver/util/solve_auto/__main__.py:66:0: C0413: Import "from solver.solver import DigitSolver" should be placed at the top of the module (wrong-import-position)
@@ -14,5 +10,5 @@ solver/util/solve_auto/__main__.py:177:25: W0108: Lambda may not be necessary (u
 solver/util/solve_auto/__main__.py:177:35: W0640: Cell variable solution defined in loop (cell-var-from-loop)
 
 -----------------------------------
-Your code has been rated at 9.56/10
+Your code has been rated at 9.62/10
 
