@@ -18,7 +18,7 @@
  • [Deutsche](README_de.md)
  • [Русский](README_ru.md)
 
-Digits Solver は、一連の始点数字を対象の数字に変換するための数学的な操作を見つけることで、数字のパズルゲームを解決するためのPythonプログラムです。
+「Digits Solver」へようこそ。この必須のPythonプログラムは、ニューヨークタイムズが開発したDigitsパズルゲームを攻略するために設計されました。数字の魅力に浸りながら、数学の演算を駆使して出発点の数字を操作し、目標の数字を見つけ出す戦略を展開してください。強力なアルゴリズムと緻密な分析により、Digits Solverは各パズルを迅速に解き明かし、一歩ずつ確実な解答を提供します。パズル解決のスキルを高め、数字の中に隠された秘密を解き放ちましょう。Digitsゲームのマスターにとって欠かせない最高のパートナーを体験してください。
 
 [![Python アプリケーション](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
 [![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
