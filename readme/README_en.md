@@ -100,7 +100,7 @@ python solver <starting_digits> <target_digit> [-os] [-h]
 
 3. Note starting_digits always go before target_digits. This is an example of puzzle with 8 starting_digits:
    ```bash
-   python solver 2 3 5 7 11 13 17 19 21 -os
+   python solver 2 3 5 7 11 13 17 19 323 -os
    ```
 
 ## Output
