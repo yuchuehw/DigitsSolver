@@ -1,7 +1,7 @@
 <p align="center">
     <picture>
       <img 
-        src="https://github.com/yuchuehw/DigitsSolver/new_logo.png" 
+        src="new_logo.png" 
         alt="VueTube 圖示"
         width="500"
        />
