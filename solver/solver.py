@@ -207,7 +207,7 @@ class DigitSolver:
         self._printer = function
 
     def _generate_new_step(
-        self, step: List[str], operator_: str, num1: int, num2: int
+        self, step: List[str], operator_: str, num1: int, num2: int, combined_num:int
     ) -> List[str]:
         """
         Generates a new step by appending the current step with the
@@ -218,11 +218,12 @@ class DigitSolver:
             operator_ (str): The operator string.
             num1 (int): The first number.
             num2 (int): The second number.
+            combined_num(int): the result of the operation
 
         Returns:
             List[str]: The new step list.
         """
-        return step + [f"{num1} {operator_} {num2} = {self._target_digit}"]
+        return step + [f"{num1} {operator_} {num2} = {combined_num}"]
 
     def _check_n_print(self, solutions: List[List[frozenset]], step: List[str]) -> bool:
         """
@@ -276,7 +277,7 @@ class DigitSolver:
                 combined_num = operation_(num1, num2)
                 if combined_num == self._target_digit:
                     combined_num = int(combined_num)
-                    new_step = self._generate_new_step(step, operator_, num1, num2)
+                    new_step = self._generate_new_step(step, operator_, num1, num2, self._target_digit)
                     self._check_n_print(solutions, new_step)
                 elif combined_num:
                     new_numbers = sorted(templist + [combined_num])
@@ -285,7 +286,7 @@ class DigitSolver:
                     if tuple(new_numbers) in discovered:
                         continue
                     discovered.add(tuple(new_numbers))
-                    new_step = self._generate_new_step(step, operator_, num1, num2)
+                    new_step = self._generate_new_step(step, operator_, num1, num2, combined_num)
                     next_gen = (new_numbers, new_step, discovered, solutions)
                     tasks.append(next_gen)
         return tasks
