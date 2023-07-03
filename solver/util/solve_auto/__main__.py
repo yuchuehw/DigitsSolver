@@ -48,8 +48,12 @@ import sys
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-from solve_auto import play_button_click, close_help_button_click, read_problem, combine_numbers, next_puzzle_button_click, back_to_puzzles_button_click
-
+from solve_auto import (play_button_click,
+                        close_help_button_click,
+                        read_problem,
+                        combine_numbers,
+                        next_puzzle_button_click,
+                        back_to_puzzles_button_click)
 
 ## temporary implementation ##
 path = os.path.abspath(__file__).split("/")
@@ -61,8 +65,6 @@ path.pop()
 sys.path.append("/".join(path))
 from solver.solver import DigitSolver
 ## temporary implementation ##
-
-
 
 LEVEL_0_TIME = 1680998400000
 ONE_DAY = 86400000
@@ -144,6 +146,52 @@ def init_parser() -> argparse.ArgumentParser:
     return parser
 
 
+def automate_puzzle(driver: webdriver.Chrome, level: int, time_: int, click_close: bool) -> None:
+    """
+    Automates the solving of a single puzzle.
+
+    Args:
+        driver (webdriver.Chrome): The Chrome WebDriver.
+        level (int): The level of the puzzle.
+        time_ (int): The time value of the puzzle.
+        click_close (bool): Whether to click the "Close Help" button.
+    """
+    puzzle_date = get_date(time_)
+    print(f"Now solving puzzle #{level} ({puzzle_date})")
+
+    driver.get("https://www.nytimes.com/games/digits")
+    driver.execute_script(f"Date = TimeShift.Date;TimeShift.setTime({time_});")
+
+    play_button_click(driver)
+
+    if click_close:
+        close_help_button_click(driver)
+
+    for question in range(5):
+        buttons = defaultdict(list)
+        solution = []
+
+        target = read_problem(driver, buttons)
+
+        solver = DigitSolver([int(x) for x in buttons], int(target))
+        solver.printer = lambda y: solution.append(y)
+        solver.solve(True)
+        print(list(buttons), target)
+
+        for step in solution[0]:
+            print(step)
+            step_list = step.split(" ")
+            combine_numbers(driver, step_list, buttons)
+
+        if question == 4:
+            back_to_puzzles_button_click(driver)
+            time_ += ONE_DAY
+            level += 1
+            continue
+
+        next_puzzle_button_click(driver)
+
+
 def automation(start_level: int, level_to_play: int, click_close: bool = False) -> None:
     """
     Automates the Digits game solving process.
@@ -160,48 +208,15 @@ def automation(start_level: int, level_to_play: int, click_close: bool = False) 
     driver = webdriver.Chrome(options=chrome_options)
     # Read TimeShift.js
     inject = ""
-    with open(TIMESHIFTPATH, "r", encoding="utf-8") as f:
-        inject = f.read()
+    with open(TIMESHIFTPATH, "r", encoding="utf-8") as time_shift_js:
+        inject = time_shift_js.read()
 
     driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {"source": inject})
     level = start_level
     time_ = puzzle_level_to_time(start_level)
 
     for _ in range(level_to_play):
-        puzzle_date = get_date(time_)
-        print(f"Now solving puzzle #{level} ({puzzle_date})")
-
-        driver.get("https://www.nytimes.com/games/digits")
-        driver.execute_script(f"Date = TimeShift.Date;TimeShift.setTime({time_});")
-
-        play_button_click(driver)
-
-        if click_close:
-            close_help_button_click(driver)
-
-        for question in range(5):
-            buttons = defaultdict(list)
-            solution = []
-
-            target = read_problem(driver, buttons)
-
-            solver = DigitSolver([int(x) for x in buttons], int(target))
-            solver.printer = lambda x: solution.append(x)
-            solver.solve(True)
-            print(list(buttons), target)
-
-            for step in solution[0]:
-                print(step)
-                step_list = step.split(" ")
-                combine_numbers(driver, step_list, buttons)
-
-            if question == 4:
-                back_to_puzzles_button_click(driver)
-                time_ += 86400000
-                level += 1
-                continue
-
-            next_puzzle_button_click(driver)
+        automate_puzzle(driver, level, time_, click_close)
 
     driver.quit()
     print("done")
