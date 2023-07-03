@@ -8,6 +8,16 @@
     </picture>
 <p>
 
+[English](README.md)
+ • [繁體中文](README_zh-TW.md)
+ • [简体中文](README_zh-CN.md)
+ • [日本語](README_ja.md)
+ • [Español](README_es.md)
+ • [Français](README_fr.md)
+ • [Italiano](README_it.md)
+ • [Deutsche](README_de.md)
+ • Русский
+
 Digits Solver - это программа на языке Python, которая решает головоломку с цифрами, находя математические операции, которые можно применить к набору начальных цифр, чтобы получить целевую цифру.
 
 [![Приложение на Python](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
