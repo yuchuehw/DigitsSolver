@@ -104,8 +104,8 @@ print(f"encontramos {cantidad_soluciones} solución(es)")
 
 También he incluido algunos programas Python adicionales que complementan el programa solver. Puedes encontrar instrucciones detalladas sobre cómo usar cada uno de estos programas a continuación:
 
-- [Cómo usar pretty_solve.py](reference/prettySolve.md): Proporciona una versión visualmente mejorada del programa solver.
-- [Cómo usar solve_auto.py](reference/solveAuto.md): Resolutor de Digits completamente automático con Selenium.
+- [Cómo usar pretty_solve.py](prettySolve.md): Proporciona una versión visualmente mejorada del programa solver.
+- [Cómo usar solve_auto.py](solveAuto.md): Resolutor de Digits completamente automático con Selenium.
 
 No dudes en explorar estos archivos y utilizarlos para casos de uso o escenarios específicos.
 
