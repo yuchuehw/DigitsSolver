@@ -10,14 +10,14 @@
 
 ## Languages
 English
- • [繁體中文](readme/README_zh-TW.md)
- • [简体中文](readme/README_zh-CN.md)
- • [日本語](readme/README_ja.md)
- • [Español](readme/README_es.md)
- • [Français](readme/README_fr.md)
- • [Italiano](readme/README_it.md)
- • [Deutsche](readme/README_de.md)
- • [Русский](readme/README_ru.md)
+ • [繁體中文](README_zh-TW.md)
+ • [简体中文](README_zh-CN.md)
+ • [日本語](README_ja.md)
+ • [Español](README_es.md)
+ • [Français](README_fr.md)
+ • [Italiano](README_it.md)
+ • [Deutsche](README_de.md)
+ • [Русский](README_ru.md)
 
 Welcome to Digits Solver, the ultimate Python companion for conquering the mind-bending [Digits](https://www.nytimes.com/games/digits) puzzle game, developed by The New York Times. Dive into a captivating world of numerical challenges and master the art of strategic manipulation. With Digits Solver, you'll strategically manipulate a set of starting digits using mathematical operations to reach the elusive target digit. Its powerful algorithm and meticulous analysis empower you to swiftly unravel each puzzle, delivering step-by-step solutions with unwavering precision. Elevate your puzzle-solving prowess and unlock the secrets hidden within the digits. Get ready for an exciting journey to become a Digits master!
 
@@ -44,7 +44,7 @@ You can also watch this speed run that uses
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*Note: The demo showcases the [solve_auto](solveAuto.md) feature. Continue reading for more information.*
+*Note: The demo showcases the [solve_auto](readme/solveAuto.md) feature. Continue reading for more information.*
 
 ## Table of Contents
 
@@ -135,8 +135,8 @@ print(f"We found {solution_count} solution(s)")
 
 We have also included a few additional Python programs that complement the solver program. They are located inside the solver/util folder. You can read more about how to use them here:
 
-- [How to Use pretty_solve.py](prettySolve.md): Provides a visually enhanced version of the solver program.
-- [How to Use solve_auto.py](solveAuto.md): Fully automatic Digits solver with Selenium
+- [How to Use pretty_solve.py](readme/prettySolve.md): Provides a visually enhanced version of the solver program.
+- [How to Use solve_auto.py](readme/solveAuto.md): Fully automatic Digits solver with Selenium
 
 Feel free to explore these files and utilize them for specific use cases or scenarios.
 
