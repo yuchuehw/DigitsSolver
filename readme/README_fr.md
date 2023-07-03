@@ -18,8 +18,7 @@
  • [Deutsche](README_de.md)
  • [Русский](README_ru.md)
 
-
-Digits Solver est un programme Python qui résout un jeu de puzzle de chiffres en trouvant des opérations mathématiques pouvant être appliquées à un ensemble de chiffres de départ pour obtenir un chiffre cible.
+Bienvenue dans Digits Solver, un programme Python indispensable conçu pour conquérir le jeu [Digits](https://www.nytimes.com/games/digits) développé par le New York Times. Plongez-vous dans le monde captivant des défis numériques alors que vous manipulez stratégiquement un ensemble de chiffres de départ en utilisant des opérations mathématiques pour atteindre le chiffre cible insaisissable. Grâce à son puissant algorithme et à son analyse méticuleuse, Digits Solver vous permet de résoudre rapidement chaque puzzle, en fournissant des solutions étape par étape avec une précision infaillible. Améliorez votre talent pour résoudre des énigmes et déverrouillez les secrets cachés au sein des chiffres. Découvrez le compagnon ultime pour maîtriser le jeu Digits.
 
 [![Application Python](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
 [![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
