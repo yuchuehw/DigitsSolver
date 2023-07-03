@@ -174,7 +174,7 @@ def automate_puzzle(driver: webdriver.Chrome, level: int, time_: int, click_clos
         target = read_problem(driver, buttons)
 
         solver = DigitSolver([int(x) for x in buttons], int(target))
-        solver.printer = lambda y: solution.append(y)
+        solver.printer = solution.append
         solver.solve(True)
         print(list(buttons), target)
 
