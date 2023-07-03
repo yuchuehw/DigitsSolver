@@ -8,6 +8,16 @@
     </picture>
 <p>
 
+[English](README.md)
+ • [繁體中文](README_zh-TW.md)
+ • [简体中文](README_zh-CN.md)
+ • 日本語
+ • [Español](README_es.md)
+ • [Français](README_fr.md)
+ • [Italiano](README_it.md)
+ • [Deutsche](README_de.md)
+ • [Русский](README_ru.md)
+
 Digits Solver は、一連の始点数字を対象の数字に変換するための数学的な操作を見つけることで、数字のパズルゲームを解決するためのPythonプログラムです。
 
 [![Python アプリケーション](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
