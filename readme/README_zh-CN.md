@@ -41,7 +41,7 @@
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*备注：此示范展示了 [solve_auto](solveAuto.md) 功能。继续阅读以获取更多信息。 *
+*备注：此示范展示了 [solve_auto](solveAuto_zh.md) 功能。继续阅读以获取更多信息。 *
 
 ## 目录
 
@@ -135,7 +135,7 @@ print(f"我们找到了 {solution_count} 个解")
 我们还包含了几个额外的 Python 程式，它们与 solver 程式互补。它们位于 solver/util 文件夹中。你可以在这里阅读有关如何使用它们的更多信息：
 
 - [如何使用 pretty_solve.py](prettySolve.md)：提供了一个视觉增强版的 solver 程式。
-- [如何使用 solve_auto.py](solveAuto.md)：使用 Selenium 的完全自动化 Digits solver
+- [如何使用 solve_auto.py](solveAuto_zh.md)：使用 Selenium 的完全自动化 Digits solver
 
 随意探索这些文件并根据特定的用例或场景使用它们。
 
