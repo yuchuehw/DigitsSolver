@@ -8,10 +8,10 @@
     </picture>
 <p>
 
-English
+[English](README_en.md)
  • [繁體中文](README_zh-TW.md)
  • [简体中文](README_zh-CN.md)
- • [日本語](README_ja.md)
+ • 日本語
  • [Español](README_es.md)
  • [Français](README_fr.md)
  • [Italiano](README_it.md)
