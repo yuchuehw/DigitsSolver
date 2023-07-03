@@ -28,7 +28,7 @@
 [![Selenium](https://img.shields.io/badge/Selenium-grey.svg?style=flat&logo=selenium)](https://www.selenium.dev/)
 [![TimeShift](https://img.shields.io/badge/TimeShift.js-grey.svg?style=flat&logo=javascript)](https://github.com/plaa/TimeShift-js)
 ![歡迎貢獻](https://img.shields.io/badge/歡迎-貢獻-brightgreen.svg?style=flat&color=pink)
-[![許可證](https://img.shields.io/github/license/yuchuehw/DigitsSolver?style=flat&color=yellow)](LICENSE.md)
+[![許可證](https://img.shields.io/badge/許可證-MIT-yellow.svg)](LICENSE.md)
 [![程式碼風格：black](https://img.shields.io/badge/程式碼風格-black-000000.svg)](https://github.com/psf/black)
 ![HitCount](https://hits.dwyl.com/yuchuehw/DigitsSolver.svg?style=flat)
 
