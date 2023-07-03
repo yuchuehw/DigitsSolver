@@ -8,12 +8,12 @@
     </picture>
 <p>
 
-Anglais
+[English](REAME_en.md)
  • [繁體中文](README_zh-TW.md)
  • [简体中文](README_zh-CN.md)
  • [日本語](README_ja.md)
  • [Español](README_es.md)
- • [Français](README_fr.md)
+ • Français
  • [Italiano](README_it.md)
  • [Deutsche](README_de.md)
  • [Русский](README_ru.md)
@@ -28,7 +28,7 @@ Bienvenue dans Digits Solver, l'ultime compagnon Python pour conquérir le jeu d
 [![Selenium](https://img.shields.io/badge/Selenium-grey.svg?style=flat&logo=selenium)](https://www.selenium.dev/)
 [![TimeShift](https://img.shields.io/badge/TimeShift.js-grey.svg?style=flat&logo=javascript)](https://github.com/plaa/TimeShift-js)
 ![contribution bienvenue](https://img.shields.io/badge/contribution-bienvenue-brightgreen.svg?style=flat&color=pink)
-[![Licence](https://img.shields.io/github/license/yuchuehw/DigitsSolver?style=flat&color=yellow)](LICENSE.md)
+[![licence](https://img.shields.io/badge/licence-MIT-yellow.svg)](LICENSE.md)
 [![Style de code : noir](https://img.shields.io/badge/style%20de%20code-black-000000.svg)](https://github.com/psf/black)
 ![Compteur d'accès](https://hits.dwyl.com/yuchuehw/DigitsSolver.svg?style=flat)
 
