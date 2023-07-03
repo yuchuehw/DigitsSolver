@@ -279,7 +279,7 @@ class DigitSolver:
                     new_step = step + [self._step_str(operator_,
                                                       num1,
                                                       num2,
-                                                      self._target_digit)]
+                                                      combined_num)]
                     self._check_n_print(solutions, new_step)
                 elif combined_num:
                     new_numbers = sorted(templist + [combined_num])
@@ -291,7 +291,7 @@ class DigitSolver:
                     new_step = step + [self._step_str(operator_,
                                                       num1,
                                                       num2,
-                                                      self._target_digit)]
+                                                      combined_num)]
                     next_gen = (new_numbers, new_step, discovered, solutions)
                     tasks.append(next_gen)
         return tasks
