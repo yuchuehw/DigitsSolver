@@ -44,7 +44,7 @@ You can also watch this speed run that uses
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*Note: The demo showcases the [solve_auto](readme/solveAuto.md) feature. Continue reading for more information.*
+*Note: The demo showcases the [solve_auto](solveAuto.md) feature. Continue reading for more information.*
 
 ## Table of Contents
 
@@ -135,8 +135,8 @@ print(f"We found {solution_count} solution(s)")
 
 We have also included a few additional Python programs that complement the solver program. They are located inside the solver/util folder. You can read more about how to use them here:
 
-- [How to Use pretty_solve.py](readme/prettySolve.md): Provides a visually enhanced version of the solver program.
-- [How to Use solve_auto.py](readme/solveAuto.md): Fully automatic Digits solver with Selenium
+- [How to Use pretty_solve.py](prettySolve.md): Provides a visually enhanced version of the solver program.
+- [How to Use solve_auto.py](solveAuto.md): Fully automatic Digits solver with Selenium
 
 Feel free to explore these files and utilize them for specific use cases or scenarios.
 
