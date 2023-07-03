@@ -18,7 +18,7 @@
  • [Deutsche](README_de.md)
  • [Русский](README_ru.md)
 
-欢迎使用「Digits Solver」，这是一个不可或缺的 Python 程序，专为纽约时报开发的 Digits 数字益智游戏而设计。在这个引人入胜的数字挑战世界中，您将以策略性地运用数学运算，操作一组起始数字，以达到所追求的目标数字。凭借其强大的算法和细致入微的分析，「Digits Solver」能够快速解开每个谜题，并提供一步一步的解决方案，精准无误。提升您的益智解谜能力，揭开数字背后的秘密。体验成为掌握「Digits」游戏的终极伴侣。
+欢迎使用「Digits Solver」，这是一个不可或缺的 Python 程序，专为纽约时报开发的 [Digits](https://www.nytimes.com/games/digits) 数字益智游戏而设计。在这个引人入胜的数字挑战世界中，您将以策略性地运用数学运算，操作一组起始数字，以达到所追求的目标数字。凭借其强大的算法和细致入微的分析，「Digits Solver」能够快速解开每个谜题，并提供一步一步的解决方案，精准无误。提升您的益智解谜能力，揭开数字背后的秘密。体验成为掌
 
 [![Python 应用](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
 [![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
