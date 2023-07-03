@@ -1,6 +1,6 @@
 # prettySolve.py
 
-`prettySolve.py` is a Python program that provides an interactive and visually enhanced version of the Digit Solver. It allows you to input the numbers and target digit, and then interactively loops through the possible solutions.
+`pretty_solve.py` is a Python program that provides an interactive and visually enhanced version of the Digit Solver. It allows you to input the numbers and target digit, and then interactively loops through the possible solutions.
 
 ## Prerequisites
 
