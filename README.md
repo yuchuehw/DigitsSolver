@@ -20,8 +20,8 @@ English
 
 Welcome to Digits Solver, an indispensable Python program designed to conquer the [Digits](https://www.nytimes.com/games/digits) puzzle game, developed by New York Time. Immerse yourself in the captivating world of numerical challenges as you strategically manipulate a set of starting digits using mathematical operations to reach the elusive target digit. With its powerful algorithm and meticulous analysis, Digits Solver empowers you to swiftly unravel each puzzle, delivering step-by-step solutions with unwavering precision. Elevate your puzzle-solving prowess and unlock the secrets hidden within the digits. Experience the ultimate companion for mastering the Digits game.
 
-[![Python application](actions/workflows/python-app.yml/badge.svg)](actions/workflows/python-app.yml)
-[![CodeQL](actions/workflows/github-code-scanning/codeql/badge.svg)](actions/workflows/github-code-scanning/codeql)
+[![Python application](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
+[![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
 [![PyLint Score](https://raw.githubusercontent.com/yuchuehw/DigitsSolver/main/pylint_badge.svg)](pylint.out)
 <br>
 [![python badge](https://img.shields.io/badge/Python-3776AB?style=flat&for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
