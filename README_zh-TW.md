@@ -7,6 +7,16 @@
        />
     </picture>
 <p>
+    
+[English](README.md)
+ • 繁體中文
+ • [简体中文](README_zh-CN.md)
+ • [日本語](README_ja.md)
+ • [Español](README_es.md)
+ • [Français](README_fr.md)
+ • [Italiano](README_it.md)
+ • [Deutsche](README_de.md)
+ • [Русский](README_ru.md)
 
 Digits Solver 是一個使用 Python 開發的程式，它通過尋找可以應用於一組起始數字以獲得目標數字的數學運算來解決數字拼圖遊戲。
 
