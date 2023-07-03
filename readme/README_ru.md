@@ -43,7 +43,7 @@
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*Примечание: Демонстрация демонстрирует функцию [solve_auto](solveAuto.md). Продолжайте чтение для получения дополнительной информации.*
+*Примечание: Демонстрация демонстрирует функцию [solve_auto](solveAuto_zh.md). Продолжайте чтение для получения дополнительной информации.*
 
 ## Содержание
 
