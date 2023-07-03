@@ -8,7 +8,7 @@ Before using `prettySolve.py`, make sure you have the following:
 
 - Python 3 installed on your system.
 - solver.py
-- prettySolve.py
+- pretty_solve.py
 
 ## Usage
 
