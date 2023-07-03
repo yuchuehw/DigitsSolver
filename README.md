@@ -2,11 +2,22 @@
     <picture>
       <img 
         src="new_logo.png" 
-        alt="VueTube icon"
+        alt="Digits Solver icon"
         width="500"
        />
     </picture>
 <p>
+
+[English](README.md)
+ • [繁體中文](README_zh-TW.md)
+ • [简体中文](README_zh-CN.md)
+ • [日本語](README_ja.md)
+ • [Español](README_es.md)
+ • [Français](README_fr.md)
+ • [Deutsche](README_de.md)
+ • [Italiano](README_it.md)
+ • [Italiano](README_it.md)
+ • [Русский](README_ru.md)
 
 Digits Solver is a Python program that solves a digits puzzle game by finding mathematical operations that can be applied to a set of starting digits to obtain a target digit.
 
@@ -112,4 +123,4 @@ The Digits Solver program is licensed under the [MIT License](https://choosealic
 
 ## Acknowledgements
 
-Special thanks to the author of [timeshift.js](https://github.com/plaa/TimeShift-js) for their contribution to this project. Portions of their code have been utilized in the implementation of the speedrun.py
+Special thanks to the author of [timeshift.js](https://github.com/plaa/TimeShift-js) for their contribution to this project. Portions of their code have been utilized in the implementation of the solver.util module
