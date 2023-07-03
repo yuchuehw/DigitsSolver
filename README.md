@@ -9,14 +9,14 @@
 <p>
 
 English
- • [繁體中文](README_zh-TW.md)
- • [简体中文](README_zh-CN.md)
- • [日本語](README_ja.md)
- • [Español](README_es.md)
- • [Français](README_fr.md)
- • [Italiano](README_it.md)
- • [Deutsche](README_de.md)
- • [Русский](README_ru.md)
+ • [繁體中文](https://github.com/yuchuehw/DigitsSolver/readme/README_zh-TW.md)
+ • [简体中文](https://github.com/yuchuehw/DigitsSolver/readme/README_zh-CN.md)
+ • [日本語](https://github.com/yuchuehw/DigitsSolver/readme/README_ja.md)
+ • [Español](https://github.com/yuchuehw/DigitsSolver/readme/README_es.md)
+ • [Français](https://github.com/yuchuehw/DigitsSolver/readme/README_fr.md)
+ • [Italiano](https://github.com/yuchuehw/DigitsSolver/readme/README_it.md)
+ • [Deutsche](https://github.com/yuchuehw/DigitsSolver/readme/README_de.md)
+ • [Русский](https://github.com/yuchuehw/DigitsSolver/readme/README_ru.md)
 
 Digits Solver is a Python program that solves a digits puzzle game by finding mathematical operations that can be applied to a set of starting digits to obtain a target digit.
 
