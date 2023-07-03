@@ -132,7 +132,7 @@ solution_count = solver.solve(False)
 print(f"我們找到了 {solution_count} 個解")
 ```
 
-## 實用模組
+## Util 模組
 
 我們還包含了幾個額外的 Python 程式，它們與 solver 程式互補。它們位於 solver/util 文件夾中。你可以在這裡閱讀有關如何使用它們的更多信息：
 
