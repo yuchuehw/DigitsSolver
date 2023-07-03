@@ -1,5 +1,3 @@
-以下是一份 README.md 文件的翻譯成繁體中文的版本：
-
 <p align="center">
     <picture>
       <img 
@@ -120,4 +118,4 @@ Digits Solver 程式根據 [MIT 許可證](https://choosealicense.com/licenses/m
 
 ## 致謝
 
-特別感謝 [timeshift.js](https://github.com/plaa/TimeShift-js) 的作者對此項目的貢獻。他們的部分代碼已在 speedrun.py 的實現中使用。
+特別感謝 [timeshift.js](https://github.com/plaa/TimeShift-js) 的作者對此項目的貢獻。他們的部分代碼已在 solver/util 模組的實現中使用。
