@@ -1,7 +1,7 @@
 <p align="center">
     <picture>
       <img 
-        src="new_logo.png" 
+        src="https://raw.githubusercontent.com/yuchuehw/DigitsSolver/main/new_logo.png" 
         alt="Digits Solver icon"
         width="500"
        />
