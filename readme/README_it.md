@@ -17,8 +17,9 @@
  • Italiano
  • [Deutsche](README_de.md)
  • [Русский](README_ru.md)
+Certainly! Here are the translations of the added paragraph in different languages:
 
-Willkommen bei Digits Solver, einem unverzichtbaren Python-Programm, das entwickelt wurde, um das [Digits](https://www.nytimes.com/games/digits) Puzzle-Spiel der New York Times zu meistern. Tauchen Sie ein in die fesselnde Welt numerischer Herausforderungen, während Sie eine Reihe von Ausgangszahlen strategisch mit mathematischen Operationen manipulieren, um die gesuchte Zielzahl zu erreichen. Mit seinem leistungsstarken Algorithmus und akribischen Analysen ermöglicht Ihnen Digits Solver, jedes Puzzle schnell zu lösen und Schritt-für-Schritt-Lösungen mit unerschütterlicher Präzision zu liefern. Verbessern Sie Ihre Fähigkeiten im Rätsellösen und entdecken Sie die verborgenen Geheimnisse zwischen den Zahlen. Erleben Sie den ultimativen Begleiter zur Meisterung des Digits-Spiels.
+Benvenuti in Digits Solver, un indispensabile programma Python progettato per conquistare il gioco del [Digits](https://www.nytimes.com/games/digits), sviluppato dal New York Times. Immergiti nel coinvolgente mondo delle sfide numeriche, manipolando strategicamente un insieme di cifre iniziali utilizzando operazioni matematiche per raggiungere l'elusiva cifra target. Con il suo potente algoritmo e un'analisi meticolosa, Digits Solver ti consente di svelare rapidamente ogni enigma, offrendo soluzioni passo dopo passo con una precisione incrollabile. Eleva la tua abilità nel risolvere puzzle e svela i segreti nascosti tra le cifre. Vivi l'esperienza del compagno definitivo per padroneggiare il gioco Digits.
 
 [![Python application](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/python-app.yml)
 [![CodeQL](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/yuchuehw/DigitsSolver/actions/workflows/github-code-scanning/codeql)
