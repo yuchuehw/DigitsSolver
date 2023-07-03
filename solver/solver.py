@@ -206,15 +206,14 @@ class DigitSolver:
             raise TypeError("function must be a callable object")
         self._printer = function
 
-    def _generate_new_step(
-        self, step: List[str], operator_: str, num1: int, num2: int, combined_num:int
+    def _step_str(
+        self, operator_: str, num1: int, num2: int, combined_num:int
     ) -> List[str]:
         """
-        Generates a new step by appending the current step with the
+        Generates a step strin by formatting the
         provided operator and numbers.
 
         Args:
-            step (List[str]): The current step list.
             operator_ (str): The operator string.
             num1 (int): The first number.
             num2 (int): The second number.
@@ -223,7 +222,7 @@ class DigitSolver:
         Returns:
             List[str]: The new step list.
         """
-        return step + [f"{num1} {operator_} {num2} = {combined_num}"]
+        return f"{num1} {operator_} {num2} = {combined_num}"
 
     def _check_n_print(self, solutions: List[List[frozenset]], step: List[str]) -> bool:
         """
@@ -277,7 +276,10 @@ class DigitSolver:
                 combined_num = operation_(num1, num2)
                 if combined_num == self._target_digit:
                     combined_num = int(combined_num)
-                    new_step = self._generate_new_step(step, operator_, num1, num2, self._target_digit)
+                    new_step = step + [self._step_str(operator_,
+                                                      num1,
+                                                      num2,
+                                                      self._target_digit)]
                     self._check_n_print(solutions, new_step)
                 elif combined_num:
                     new_numbers = sorted(templist + [combined_num])
@@ -286,7 +288,10 @@ class DigitSolver:
                     if tuple(new_numbers) in discovered:
                         continue
                     discovered.add(tuple(new_numbers))
-                    new_step = self._generate_new_step(step, operator_, num1, num2, combined_num)
+                    new_step = step + [self._step_str(operator_,
+                                                      num1,
+                                                      num2,
+                                                      self._target_digit)]
                     next_gen = (new_numbers, new_step, discovered, solutions)
                     tasks.append(next_gen)
         return tasks
