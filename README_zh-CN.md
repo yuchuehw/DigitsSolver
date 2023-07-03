@@ -118,7 +118,4 @@ Digits Solver 程序根据 [MIT 许可证](https://choosealicense.com/licenses/m
 
 ## 致谢
 
-特别感谢 [timeshift.js](https://github.com/plaa/TimeShift-js) 的作者对本项目的贡献。他们的部分代码已在 solver/util 模块的实现中得到利用。
-```
-
-Please replace the original content in your README.md file with the translated content above.
+特别感谢 [timeshift.js](https://github.com/plaa/TimeShift-js) 的作者对本项目的贡献。他们的部分代码已在 solver.util 模块的实现中得到利用。
