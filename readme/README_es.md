@@ -45,7 +45,7 @@ el algoritmo Digits Solver:
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-morado.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*Nota: La demostración muestra la función [solve_auto](solveAuto.md). Continúa leyendo para obtener más información.*
+*Nota: La demostración muestra la función [solve_auto](solveAuto_es.md). Continúa leyendo para obtener más información.*
 
 ## Tabla de contenido
 
@@ -139,7 +139,7 @@ print(f"Encontramos {cantidad_soluciones} solución(es)")
 También hemos incluido algunos programas adicionales en Python que complementan el programa del solucionador. Se encuentran dentro de la carpeta `solver/util`. Puedes leer más sobre cómo utilizarlos aquí:
 
 - [Cómo utilizar pretty_solve.py](prettySolve.md): Proporciona una versión visualmente mejorada del programa del solucionador.
-- [Cómo utilizar solve_auto.py](solveAuto.md): Solucionador automático completo de Digits con Selenium
+- [Cómo utilizar solve_auto.py](solveAuto_es.md): Solucionador automático completo de Digits con Selenium
 
 Siéntete libre de explorar estos archivos y utilizarlos para casos de uso o escenarios específicos.
 
