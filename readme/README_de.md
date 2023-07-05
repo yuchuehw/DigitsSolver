@@ -44,7 +44,7 @@ Du kannst auch diesen Speedrun ansehen, bei dem der Digits Solver-Algorithmus ve
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*Hinweis: Die Demo zeigt die Funktion [solve_auto](solveAuto.md). Weitere Informationen findest du im weiteren Verlauf.*
+*Hinweis: Die Demo zeigt die Funktion [solve_auto](solveAuto_de.md). Weitere Informationen findest du im weiteren Verlauf.*
 
 ## Inhaltsverzeichnis
 
@@ -136,7 +136,7 @@ print(f"Wir haben {anzahl_lösungen} Lösung(en) gefunden.")
 Wir haben auch ein paar zusätzliche Python-Programme beigefügt, die das Solver-Programm ergänzen. Sie befinden sich im Ordner solver/util. Hier kannst du mehr darüber lesen, wie du sie verwenden kannst:
 
 - [Wie man pretty_solve.py verwendet](prettySolve.md): Bietet eine optisch aufgewertete Version des Solver-Programms.
-- [Wie man solve_auto.py verwendet](solveAuto.md): Vollautomatischer Digits Solver mit Selenium
+- [Wie man solve_auto.py verwendet](solveAuto_de.md): Vollautomatischer Digits Solver mit Selenium
 
 Du kannst diese Dateien erkunden und sie für bestimmte Anwendungsfälle oder Szenarien nutzen.
 
