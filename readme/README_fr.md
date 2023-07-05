@@ -43,7 +43,7 @@ Vous pouvez également regarder cette démonstration rapide qui utilise l'algori
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*Remarque : La démo présente la fonction [solve_auto](solveAuto.md). Continuez à lire pour plus d'informations.*
+*Remarque : La démo présente la fonction [solve_auto](solveAuto_fr.md). Continuez à lire pour plus d'informations.*
 
 ## Table des matières
 
@@ -137,7 +137,7 @@ print(f"Nous avons trouvé {solution_count} solution(s)")
 Nous avons également inclus quelques programmes Python supplémentaires qui complètent le programme solveur. Ils se trouvent dans le dossier solver/util. Vous pouvez en savoir plus sur leur utilisation ici :
 
 - [Comment utiliser pretty_solve.py](prettySolve.md) : Fournit une version visuellement améliorée du programme solveur.
-- [Comment utiliser solve_auto.py](solveAuto.md) : Solveur Digits entièrement automatique avec Selenium.
+- [Comment utiliser solve_auto.py](solveAuto_fr.md) : Solveur Digits entièrement automatique avec Selenium.
 
 N'hésitez pas à explorer ces fichiers et à les utiliser pour des cas d'utilisation ou des scénarios spécifiques.
 
