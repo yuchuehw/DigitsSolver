@@ -27,7 +27,7 @@
 ## 用法
 
 ```plaintext
-solveAuto [-h] [[-start S] [-level L] | [-daily]]
+solver/util/solve_auto [-h] [[-start S] [-level L] | [-daily]]
 ```
 
 ### 可選參數
@@ -44,12 +44,12 @@ solveAuto [-h] [[-start S] [-level L] | [-daily]]
 
 1. 解決從第 5 級開始的 10 級：
    ```plaintext
-   python solver/util/solveAuto --startLevel 5 --levelToPlay 10
+   python solver/util/solve_auto --startLevel 5 --levelToPlay 10
    ```
 
 2. 僅解決每日謎題：
    ```plaintext
-   python solver/util/solveAuto --dailyOnly
+   python solver/util/solve_auto --dailyOnly
    ```
 
 注意：如果未提供任何參數，工具將使用默認設置（從第 1 級到第 20 級）。
