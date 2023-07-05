@@ -27,7 +27,7 @@
 ## 使用法
 
 ```plaintext
-solveAuto [-h] [[-start S] [-level L] | [-daily]]
+python solver/util/solve_auto [-h] [[-start S] [-level L] | [-daily]]
 ```
 
 ### オプション引数
@@ -45,12 +45,12 @@ solveAuto [-h] [[-start S] [-level L] | [-daily]]
 
 1. レベル5から始まる10レベルを解決する：
    ```plaintext
-   python solver/util/solveAuto --startLevel 5 --levelToPlay 10
+   python solver/util/solve_auto --startLevel 5 --levelToPlay 10
    ```
 
 2. 毎日のパズルのみを解決する：
    ```plaintext
-   python solver/util/solveAuto --dailyOnly
+   python solver/util/solve_auto --dailyOnly
    ```
 
 注：引数が指定されていない場合、ツールはデフォルトの設定（レベル1からレベル20までの範囲）を使用します。
