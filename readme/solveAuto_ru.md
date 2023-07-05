@@ -27,7 +27,7 @@
 ## Использование
 
 ```plaintext
-solveAuto [-h] [[-start S] [-level L] | [-daily]]
+solver/util/solve_auto [-h] [[-start S] [-level L] | [-daily]]
 ```
 
 ### Необязательные аргументы
@@ -44,12 +44,12 @@ solveAuto [-h] [[-start S] [-level L] | [-daily]]
 
 1. Решить 10 уровней, начиная с уровня 5:
    ```plaintext
-   python solver/util/solveAuto --startLevel 5 --levelToPlay 10
+   python solver/util/solve_auto --startLevel 5 --levelToPlay 10
    ```
 
 2. Решить только ежедневные головоломки:
    ```plaintext
-   python solver/util/solveAuto --dailyOnly
+   python solver/util/solve_auto --dailyOnly
    ```
 
 Примечание: Если аргументы не указаны, инструмент будет использовать настройки по умолчанию (начиная с уровня 1 до уровня 20).
