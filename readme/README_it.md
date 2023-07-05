@@ -43,7 +43,7 @@ Puoi anche guardare questa esecuzione veloce che utilizza l'algoritmo Digits Sol
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*Nota: La demo mostra la funzione [solve_auto](solveAuto.md). Continua a leggere per ulteriori informazioni.*
+*Nota: La demo mostra la funzione [solve_auto](solveAuto_it.md). Continua a leggere per ulteriori informazioni.*
 
 ## Tabella dei contenuti
 
@@ -137,7 +137,7 @@ print(f"Abbiamo trovato {numero_soluzioni} soluzione/e")
 Abbiamo incluso anche alcuni programmi Python aggiuntivi che integrano il programma del risolutore. Sono situati all'interno della cartella solver/util. Puoi leggere ulteriori informazioni su come utilizzarli qui:
 
 - [Come Utilizzare pretty_solve.py](prettySolve.md): Fornisce una versione visivamente migliorata del programma del risolutore.
-- [Come Utilizzare solve_auto.py](solveAuto.md): Risolutore automatico completo di Digits con Selenium
+- [Come Utilizzare solve_auto.py](solveAuto_it.md): Risolutore automatico completo di Digits con Selenium
 
 Sentiti libero di esplorare questi file e utilizzarli per casi d'uso o scenari specifici.
 
