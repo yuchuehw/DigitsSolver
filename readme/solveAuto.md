@@ -28,7 +28,7 @@ Sure! Here's the documentation for the command-line interface:
 ## Usage
 
 ```plaintext
-solveAuto [-h] [[-start S] [-level L] | [-daily]]
+python solver/util/solve_auto [-h] [[-start S] [-level L] | [-daily]]
 ```
 
 ### Optional Arguments
@@ -46,12 +46,12 @@ solveAuto [-h] [[-start S] [-level L] | [-daily]]
 
 1. Solve 10 levels starting from level 5:
    ```plaintext
-   python solver/util/solveAuto --startLevel 5 --levelToPlay 10
+   python solver/util/solve_auto --startLevel 5 --levelToPlay 10
    ```
 
 2. Solve daily puzzles only:
    ```plaintext
-   python solver/util/solveAuto --dailyOnly
+   python solver/util/solve_auto --dailyOnly
    ```
 
 Note: If no arguments are provided, the tool will use default settings (start from level 1 to level 20).
