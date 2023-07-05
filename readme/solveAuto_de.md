@@ -27,7 +27,7 @@ Natürlich! Hier ist die Dokumentation für die Befehlszeilenschnittstelle:
 ## Verwendung
 
 ```plaintext
-solveAuto [-h] [[-start S] [-level L] | [-daily]]
+solver/util/solve_auto [-h] [[-start S] [-level L] | [-daily]]
 ```
 
 ### Optionale Argumente
@@ -44,12 +44,12 @@ solveAuto [-h] [[-start S] [-level L] | [-daily]]
 
 1. Löse 10 Level, beginnend ab Level 5:
    ```plaintext
-   python solver/util/solveAuto --startLevel 5 --levelToPlay 10
+   python solver/util/solve_auto --startLevel 5 --levelToPlay 10
    ```
 
 2. Löse nur tägliche Rätsel:
    ```plaintext
-   python solver/util/solveAuto --dailyOnly
+   python solver/util/solve_auto --dailyOnly
    ```
 
 Hinweis: Wenn keine Argumente angegeben werden, verwendet das Tool die Standardeinstellungen (beginnend bei Level 1 bis Level 20).
