@@ -41,7 +41,7 @@ Digits Solverへようこそ。これは、The New York Timesが開発した数�
 
 [![Replit](https://img.shields.io/badge/DEMO-YOUTUBE-purple.svg?style=flat&logo=youtube)](https://www.youtube.com/watch?v=se2OdZnEHHA)
 
-*注意：デモでは[solve_auto](solveAuto.md)機能を紹介しています。詳細については続けて読んでください。*
+*注意：デモでは[solve_auto](solveAuto_ja.md)機能を紹介しています。詳細については続けて読んでください。*
 
 ## 目次
 
@@ -134,7 +134,7 @@ print(f"{solution_count} 個の解が見つかりました")
 solver.utilフォルダ内には、solverプログラムを補完するいくつかの追加のPythonプログラムも含まれています。これらの使用方法については、こちらをご覧ください：
 
 - [pretty_solve.pyの使用方法](prettySolve.md)：solverプログラムの視覚的に向上したバージョンを提供します。
-- [solve_auto.pyの使用方法](solveAuto.md)：Seleniumを使用した完全自動のDigitsソルバー
+- [solve_auto.pyの使用方法](solveAuto_ja.md)：Seleniumを使用した完全自動のDigitsソルバー
 
 これらのファイルを探索し、特定のユースケースやシナリオに活用してください。
 
