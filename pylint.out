@@ -1,11 +1,11 @@
-runid:zcujifymxg
+runid:hbuxwnrkol
 ************* Module solver.__main__
 solver/__main__.py:41:0: E0611: No name 'DigitSolver' in module 'solver' (no-name-in-module)
-************* Module solver.util.pretty_solve.__main__
-solver/util/pretty_solve/__main__.py:39:0: C0413: Import "from solver.solver import DigitSolver" should be placed at the top of the module (wrong-import-position)
 ************* Module solver.util.solve_auto.__main__
 solver/util/solve_auto/__main__.py:51:0: E0401: Unable to import 'solve_auto' (import-error)
 solver/util/solve_auto/__main__.py:66:0: C0413: Import "from solver.solver import DigitSolver" should be placed at the top of the module (wrong-import-position)
+************* Module solver.util.pretty_solve.__main__
+solver/util/pretty_solve/__main__.py:39:0: C0413: Import "from solver.solver import DigitSolver" should be placed at the top of the module (wrong-import-position)
 
 -----------------------------------
 Your code has been rated at 9.67/10
