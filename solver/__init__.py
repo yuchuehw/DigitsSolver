@@ -32,3 +32,5 @@ Usage:
 Author: Yu-Chueh Wang
 Version: 1.7.0
 """
+
+from solver.solver import DigitSolver
